@@ -1,0 +1,43 @@
+.banner{
+    width: 1000px;
+    height:500px;
+    border: 2px solid black ;
+    margin: auto;
+    
+   
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+
+}   
+
+
+
+
+@keyframes banner {
+        0%,25% {
+
+            background-image: url(imagenes/noticia1.jpg);
+            
+        }
+
+        26%,50% {
+
+            background-image: url(imagenes/noticia2.jpg);
+        
+        }
+
+        
+        51%,75% {
+
+            background-image: url(imagenes/noticia3.jpg);
+        
+        }
+
+          
+        76%,100% {
+
+            background-image: url(imagenes/noticia4.jpg);
+        
+        }
+}
+
