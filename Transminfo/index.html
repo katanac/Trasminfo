@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/nav.css" />
   <title>Transminfo</title>
+  <script type="text/javascript" src="highslide/highslide-with-html.js"></script>
+  <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
 </head>
 
-<body>
+<body onClick="hs.close()">
     <header>
       <img src="imagenes/logo.png" class="logo"width="120" height="120" />
       <img src="imagenes/tagline.png" class="tagline" width="500" height="100"/>
@@ -43,19 +45,19 @@
     <div id="carusel" class="carousel slide mi-carrusel" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="img" style="background-image: url(imagenes/noticia1.jpg)"></div>
+          <div class="imagenes" style="background-image: url(imagenes/noticia1.jpg)"></div>
         </div>
 
         <div class="carousel-item">
-          <div class="img" style="background-image: url(imagenes/noticia2.jpg)"></div>
+          <div class="imagenes" style="background-image: url(imagenes/noticia2.jpg)"></div>
         </div>
 
         <div class="carousel-item">
-          <div class="img" style="background-image: url(imagenes/noticia3.jpg)"></div>
+          <div class="imagenes" style="background-image: url(imagenes/noticia3.jpg)"></div>
         </div>
 
         <div class="carousel-item">
-          <div class="img" style="background-image: url(imagenes/noticia4.jpg)"></div>
+          <div class="imagenes" style="background-image: url(imagenes/noticia4.jpg)"></div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carusel" role="button" data-slide="prev">
@@ -68,30 +70,80 @@
       </a>
     </div>
   <!--banner-carusel 2-->
-  <div class="encabezado">
-    <a name="interes" id="interes"><h2>SITIOS DE INTERES</h2></a>
+ <div class="banner-info">
+  <!--primer info-->
+  <a href="imagenes/banos.jpg" class="highslide" onclick="return hs.expand(this)">
+    <img src="imagenes/banos.png" width="300x" height="120px"alt="Baños publicos"
+    title="Baños publicos en el sistema" />
+  </a>
+  <div class="highslide-caption">
+    Baños publicos.
+    <a href="https://www.transmilenio.gov.co/publicaciones/146215/banos_publicos/">Mas informacion
   </div>
-  <div id="carusel1" class="carousel slide mi-carrusel" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="img" style="background-image: url(imagenes/INTERES1.jpg)"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="img" style="background-image: url(imagenes/INTERES2.jpg)"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="img" style="background-image: url(imagenes/INTERES3.jpeg)"></div>
-      </div>
+  <!--segunda info-->
+  <a href="imagenes/biblioestaciones.jpg" class="highslide" onclick="return hs.expand(this)">
+    <img src="imagenes/biblio.png" width="300x" height="120px"alt="Biblioestaciones"
+    title="biblioestaciones" />
+  </a>
+  <div class="highslide-caption">
+    Biblioestaciones en el sistema.
+    <a href="https://www.transmilenio.gov.co/publicaciones/146212/bibloestaciones/">Mas informacion
+  </div>
+  <!--tercer info-->
+  <a href="imagenes/cicloparqueaderos.jpg" class="highslide" onclick="return hs.expand(this)">
+    <img src="imagenes/bici.png" width="300x" height="120px"alt="Cicloparqueaderos"
+    title="Cicloparqueaderos" />
+  </a>
+  <div class="highslide-caption">
+    Mapa de los cicloparqueaderos.
+    <a href="https://www.transmilenio.gov.co/publicaciones/147584/cicloparqueaderos-en-el-sistema-transmilenio/ ">Mas informacion
+  </div>
+    <!--cuarta info-->
+    <a href="imagenes/app.png" class="highslide" onclick="return hs.expand(this)">
+      <img src="imagenes/app.png" width="300x" height="120px"alt="transmi App"
+      title="Aplicacion de transmilenio" />
+    </a>
+    <div class="highslide-caption">
+      Descargue la app de transmilenio para estar al dia con todas las novedades de el sistema
+      <a href="https://play.google.com/store/apps/details?id=com.nexura.transmilenio&hl=es_CO">Descarguela Aqui</a>
     </div>
-    <a class="carousel-control-prev" href="#carusel1" role="button" data-slide="prev" >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previo</span>
+    <!--Quinta info-->
+    <a href="imagenes/transmichiquis.png" class="highslide" onclick="return hs.expand(this)">
+    <img src="imagenes/transmichi.png" width="300x" height="120px"alt="TransMiChiquis"
+    title="TransMiChiquis" />
     </a>
-    <a class="carousel-control-next" href="#carusel1" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Siguiente</span>
+    <div class="highslide-caption">
+    Para que los niños conozcan el sistema.
+    <a href="https://transmichiquis.transmilenio.gov.co">Ir a la pagina
+    </div>
+    <!--sexta info-->
+    <a href="imagenes/salud.jpg" class="highslide" onclick="return hs.expand(this)">
+    <img src="imagenes/puestosalud.jpg" width="300x" height="120px"alt="Puestos de salud"
+    title="Puestos de atencion en salud del sistema" />
     </a>
-  </section>
+    <div class="highslide-caption">
+    Puestos de Atencion en salud.
+    <a href="https://www.transmilenio.gov.co/publicaciones/146214/puestos_de_atencion_en_salud/">Mas informacion
+    </div>
+    <!--septima info-->
+    <a href="imagenes/transwifi.png" class="highslide" onclick="return hs.expand(this)">
+    <img src="imagenes/wifi.png" width="300x" height="120px"alt="Wifi Gratis en Transmilenio "
+    title="TransMiChiquis" />
+    </a>
+    <div class="highslide-caption">
+    Disfruta de wifi en las estaciones de transmilenio.
+    <a href="http://www.bogota.gov.co/movilidad/wifi-gratis-en-transmilenio">Mas Informacion
+    </div>
+    <!--octava info-->
+    <a href="imagenes/pqr.png" class="highslide" onclick="return hs.expand(this)">
+      <img src="imagenes/pqr.png"  width="300x" height="120px" alt="Pqrs"
+      title="Peticiones, Quejas, Reclamos o Sugerencias" />
+    </a>
+    <div class="highslide-caption">
+      Aqui puede colocar peticiones, quejas o reclamos sobre el sistema.
+      <a href="https://play.google.com/store/apps/details?id=com.nexura.transmilenio&hl=es_CO">Ir a la pagina</a>
+    </div>
+</div>
   <!--scripts para caruseles-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
