@@ -1,0 +1,63 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../imagenes/fondo-nubes.jpg");
+    background-size: 100%;
+}
+
+footer{
+    background-color: #172340;
+    color: white;
+}
+
+footer div{
+    padding-left: 12%;
+}
+
+footer div a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.contenedor{
+    border: 1px solid black;
+    margin: 0 10%;
+    background-color: white;
+    padding: 0px;
+    width: 1003px;
+    height: 100%;
+}
+
+.encabezado{
+    align:"center";
+    background-color: #172340;
+    color: white;
+    padding-left: 33%;
+}
+
+.mapa{
+    margin-left: 14%;
+}
+
+.contenedor2{
+    border: 1px solid black;
+    margin: 0 3%;
+    background-color: white;
+}
+
+.tabla{
+    padding-right: 10%;
+}
+
+.tabla a{
+    text-decoration: none;
+    color: black;
+}
+
+.tabla a:hover,
+.tabla a:focus{
+    color: blue;
+}
