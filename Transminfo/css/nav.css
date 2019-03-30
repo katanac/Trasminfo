@@ -1,15 +1,9 @@
 .logo{
-	float: left;
-	margin: 0px auto;
-	margin-left: 30px;
-	width: 370px;
-	height: 150px;
-	padding-left: 200px;
+	display: block;
 }
 .tagline{
-    display:block;
+    display: block;
 	margin-top: 20px;
-	text-align: center;
 	padding-top: 50px;
 }
 *{
@@ -22,7 +16,7 @@
 
 header{
 	width: 100%;
-	margin-bottom: 5%;
+	align-self: auto;
 }
 
 .navegacion{

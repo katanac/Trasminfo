@@ -1,6 +1,5 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("../imagenes/fondo-nubes.jpg");
+    font-family: 'Roboto', sans-serif;
     background-size: 100%;
 }
 
@@ -9,9 +8,6 @@ footer{
     color: white;
 }
 
-footer div{
-    padding-left: 12%;
-}
 
 footer div a{
     text-decoration: none;
@@ -25,7 +21,6 @@ footer ul{
 .contenedor{
     border: 1px solid black;
     margin: 0 10%;
-    background-color: white;
     padding: 0px;
     width: 1003px;
     height: 100%;
@@ -34,7 +29,7 @@ footer ul{
 
 .encabezado{
     margin:0px auto;
-    background-color: #E83F2A;
+    background-color: #95858D;
     color: white;
     padding-left: 33%;
 }
