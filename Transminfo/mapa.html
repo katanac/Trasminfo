@@ -16,6 +16,7 @@
 
     <script type="text/javascript" src="highslide/highslide-full.js"></script>
     <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+    <link rel="stylesheet" type="text/css" href="css/estiloMapa.css" />
 
     <script type="text/javascript">
         hs.graphicsDir = 'highslide/graphics/';
@@ -45,426 +46,641 @@
                     </li>
                     <li><a href="#footer">Contacto</a></li>
                 </ul>
-                </nav>
+        </nav>
     <div class="sub-container">
             <div class="encabezado">
                     <a name="noticias" id="noticias"></a>
-                    <h2>Haga click sobre la troncal para ver detalles.</h2>
+                    <h2>Haga click sobre una estacion para ver más detalles.</h2>
                   </div>
-    <div class="mapa">
-        <img src="imagenes/mapa.png" alt="mapa de troncales" usemap="#imgmap1" style="border: none"/>
-        <map id="imgmap1" name="imgmap1">
-            <area shape="poly" alt="Carrera 10" title="Carrera 10" coords="573,78,575,98,615,95,625,94,864,102,864,71,625,84,614,84" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal11' } )" />
-            <area shape="poly" alt="Eje Ambiental" title="Eje Ambiental" coords="579,41,586,25,644,24,644,52,611,55,623,70,624,80,611,81" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal9' } )" />
-            <area shape="poly" alt="Eje Ambiental" title="Eje Ambiental" coords="613,99,624,99,626,138,613,141" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal9' } )" />
-            <area shape="poly" alt="Portal Norte" title="Portal Norte" coords="37,141,40,163,356,162,360,137,248,126,248,105,226,100,222,139" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal2' } )" />
-            <area shape="poly" alt="Carrera 7" title="Carrera 7" coords="216,77,465,74,464,60,494,60,492,75,560,74,561,101,217,101" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal12' } )" />
-            <area shape="poly" alt="Portal Suba" title="Portal Suba" coords="201,384,151,387,150,293,203,238,340,238,338,251,236,254,217,257,175,292,176,344,200,345" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal3' } )" />
-            <area shape="poly" alt="Caracas Sur" title="Caracas Sur" coords="662,142,662,160,726,160,810,243,841,277,845,315,864,313,862,271,829,246,905,243,913,214,896,203,882,212,877,227,814,229,736,149,706,139" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal8' } )" />
-            <area shape="poly" alt="Caracas" title="Caracas" coords="367,140,368,158,648,160,651,140,571,147" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal1' } )" />
-            <area shape="poly" alt="NQS Central" title="NQS Central" coords="305,158,326,157,324,197,355,231,363,239,405,242,563,242,652,241,653,99,662,100,663,248,652,252,622,251,609,251,569,251,560,252,370,253,358,248,347,240,318,210,309,198" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal5' } )" />
-            <area shape="poly" alt="Calle 26" title="Calle 26" coords="562,35,572,35,572,144,564,143" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal10' } )" />
-            <area shape="poly" alt="Calle 26" title="Calle 26" coords="559,162,576,162,575,238,559,240" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal10' } )" />
-            <area shape="poly" alt="Calle 26" title="Calle 26" coords="551,256,572,254,499,347,498,488,520,489,524,533,481,541,475,347" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal10' } )" />
-            <area shape="poly" alt="Calle 80" title="Calle 80" coords="375,162,384,162,386,212,367,237,359,229,377,210" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal4' } )" />
-            <area shape="poly" alt="Calle 80" title="Calle 80" coords="344,241,339,252,254,331,251,423,226,424,224,459,274,460,267,340,348,259" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal4' } )" />
-            <area shape="poly" alt="Portal Americas" title="Portal Americas" coords="613,164,624,164,626,238,612,238" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal6' } )" />
-            <area shape="poly" alt="Portal Americas" title="Portal Americas" coords="613,254,623,255,624,331,695,402,699,418,699,450,710,455,729,453,726,424,754,430,756,464,738,478,684,476,683,413,611,336" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal6' } )" />
-            <area shape="poly" alt="NQS Sur" title="NQS Sur" coords="661,252,668,242,700,239,765,297,766,405,829,459,851,443,873,439,882,450,881,463,854,491,842,505,746,410,747,308,697,256" href="#" onclick="return hs.htmlExpand(this, { contentId: 'troncal7' } )" />
+        <div class="ruta">
+     <div class="troncales-botones">
+        <aside>
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalCaracas' } )" style="background-color: #0b3489"> A| Caracas </button>
 
-            <div class="highslide-html-content" id="troncal1">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>A| Caracas</h2>
-                    <img src="imagenes/caracas.PNG"  alt="gráfica alusiva troncar Caracas "/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>Av. 39</li>
-                    <li>AV. Jiménez(AV. Caracas)</li>
-                    <li>Calle 19</li>
-                    <li>Calle 22</li>
-                    <li>Calle 26</li>
-                    <li>Calle 34</li>
-                    <li>Calle 45</li>
-                    <li>Calle 57</li>
-                    <li>Calle 63</li>
-                    <li>Calle 72</li>
-                    <li>Calle 76</li>
-                    <li>Flores</li>
-                    <li>Marly</li>
-                    <li>Tercer Milenio</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal2">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>B| Norte </h2>
-                    <img src="imagenes/norte.PNG"  alt="gráfica alusiva troncal Auto Norte "/>
-                    <ul>
-                    <p>Estaciones</p>
-                    <li>Alcalá</li>
-                    <li>Calle 85</li>
-                    <li>Calle 100</li>
-                    <li>Calle 106</li>
-                    <li>Calle 127</li>
-                    <li>Calle 142</li>
-                    <li>Calle 146</li>
-                    <li>Calle 187</li>
-                    <li>Estación Calle 161</li>
-                    <li>Héroes</li>
-                    <li>Mazurén</li>
-                    <li>Pepe Sierra</li>
-                    <li>Portal del Norte</li>
-                    <li>Prado</li>
-                    <li>Terminal</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal3">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>C| Suba </h2>
-                    <img src="imagenes/suba.PNG"  alt="gráfica alusiva troncal Suba "/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>21 Ángeles</li>
-                    <li>Gratamira</li>
-                    <li>Humedal Córdoba</li>
-                    <li>La Campiña</li>
-                    <li>Niza - CL 127</li>
-                    <li>Portal Suba</li>
-                    <li>Puentelargo</li>
-                    <li>Rionegro</li>
-                    <li>San Martín</li>
-                    <li>Shaio</li>
-                    <li>Suba - AV. Boyaca</li>
-                    <li>Suba - CL 95</li>
-                    <li>Suba - CL 100</li>
-                    <li>Suba - TV. 91</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal4">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>D| Calle 80 </h2>
-                    <img src="imagenes/cl 80.PNG"  alt="gráfica alusiva troncal Calle 80 "/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>Avenida 68</li>
-                    <li>Avenida Cali</li>
-                    <li>Boyacá</li>
-                    <li>Carrera 47</li>
-                    <li>Carrera 53</li>
-                    <li>Carrera 90</li>
-                    <li>Esc. Militar</li>
-                    <li>Ferias</li>
-                    <li>Granja - Carrera 77</li>
-                    <li>Minuto de Dios</li>
-                    <li>Polo</li>
-                    <li>Portal de la 80</li>
-                    <li>Quirigua</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal5">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>E| NQS Central </h2>
-                    <img src="imagenes/nqs central.PNG"  alt="gráfica alusiva troncal NQS Central "/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>AV. Chile</li>
-                    <li>AV. El Dorado</li>
-                    <li>CAD</li>
-                    <li>Campín - Universidad Antonio Nariño</li>
-                    <li>Guatoque - Veraguas</li>
-                    <li>La Castellana</li>
-                    <li>Movistar Arena</li>
-                    <li>NQS - Calle 75</li>
-                    <li>Paloquemao</li>
-                    <li>Ricaurte(NQS)</li>
-                    <li>Simón Bolívar</li>
-                    <li>Tygua - San José</li>
-                    <li>U. Nacional</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal6">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>F| Américas </h2>
-                    <img src="imagenes/americas.PNG"  alt="gráfica alusiva troncal Américas"/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>AV. Jiménez (CL 13)</li>
-                    <li>Américas - KR 53A</li>
-                    <li>Banderas</li>
-                    <li>Biblioteca Tintal</li>
-                    <li>CDS - Carrera 32</li>
-                    <li>Carrera 43</li>
-                    <li>De La Sabana</li>
-                    <li>Mandalay</li>
-                    <li>Marsella</li>
-                    <li>Patio Bonito</li>
-                    <li>Portal Américas</li>
-                    <li>Pradera</li>
-                    <li>Puente Aranda</li>
-                    <li>Ricaurte (CL 13)</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal7">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>G| NQS Sur </h2>
-                    <img src="imagenes/nqs sur.PNG"  alt="gráfica alusiva troncal NQS Sur"/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>Alquería</li>
-                    <li>Bosa</li>
-                    <li>Comuneros</li>
-                    <li>General Santander</li>
-                    <li>La Despensa</li>
-                    <li>León XIII</li>
-                    <li>Madelena</li>
-                    <li>NQS - CL 30 S.</li>
-                    <li>NQS - CL 38A S.</li>
-                    <li>Perdomo</li>
-                    <li>Portal del Sur</li>
-                    <li>SENA</li>
-                    <li>San Mateo</li>
-                    <li>Santa Isabel</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal8">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>H| Caracas Sur </h2>
-                    <img src="imagenes/caracas sur.PNG"  alt="gráfica alusiva troncal Caracas Sur"/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>Biblioteca</li>
-                    <li>Calle 40 Sur</li>
-                    <li>Consuelo</li>
-                    <li>Fucha</li>
-                    <li>Hortúa</li>
-                    <li>Hospital</li>
-                    <li>Molinos</li>
-                    <li>Nariño</li>
-                    <li>Olaya</li>
-                    <li>Parque</li>
-                    <li>Portal de Usme</li>
-                    <li>Portal del Tunal</li>
-                    <li>Quiroga</li>
-                    <li>Restrepo</li>
-                    <li>Santa Lucía</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal9">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>J| Eje Ambiental </h2>
-                    <img src="imagenes/eje ambiental.PNG"  alt="gráfica alusiva troncal Eje Ambiental"/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>Las Aguas</li>
-                    <li>Museo del Oro</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal10">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>K| Calle 26 </h2>
-                    <img src="imagenes/cl 26.PNG"  alt="gráfica alusiva troncal Calle 26"/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>AV. Rojas</li>
-                    <li>CAN</li>
-                    <li>Centro Memoria</li>
-                    <li>Ciudad Universitaria</li>
-                    <li>Concejo de Bogotá</li>
-                    <li>Corferias</li>
-                    <li>El Tiempo - Maloka</li>
-                    <li>Gobernación</li>
-                    <li>Modelia</li>
-                    <li>Normandía</li>
-                    <li>Portal Eldorado</li>
-                    <li>Quinta Paredes</li>
-                    <li>Salitre - El Greco</li>
-                    <li>Universidades</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal11">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>L| Carrera 10 </h2>
-                    <img src="imagenes/kr 10.PNG"  alt="gráfica alusiva troncal Carrera 10"/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>AV. 1° Mayo</li>
-                    <li>Bicentenario</li>
-                    <li>Ciudad Jardín - UAN</li>
-                    <li>Country Sur</li>
-                    <li>Estación San Bernardo</li>
-                    <li>Las Nieves</li>
-                    <li>Policarpa</li>
-                    <li>Portal 20 de Julio</li>
-                    <li>San Diego</li>
-                    <li>San Victorino</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-            <div class="highslide-html-content" id="troncal12">
-	
-                <div class="highslide-header">
-                    <ul>
-                        <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-body">
-                    <h2>M| Carrera 7 </h2>
-                    <img src="imagenes/kr 7.PNG"  alt="gráfica alusiva troncal Carrera 10"/>
-                    <p>Estaciones</p>
-                    <ul>
-                    <li>Museo Nacional</li>
-                    </ul>
-                </div>
-                
-                <div class="highslide-footer">
-                    <div><span class="highslide-resize" title="Resize"></span></div>
-                </div>
-                
-            </div>
-        </map>
+      <div class="highslide-html-content" id="troncalCaracas">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>A| Caracas</h2>
+          <img width="370" src="imagenes/troncales/Caracas.jpg" alt="gráfica alusiva troncal caracas " />
+          <ul>
+            <li>Tercer Milenio</li>
+            <li>Avenida Jiménez</li>
+            <li>Calle 19</li>
+            <li>Calle 22</li>
+            <li>Calle 26</li>
+            <li>Calle 34</li>
+            <li>Avenida 39</li>
+            <li>Calle 45</li>
+            <li>Marly</li>
+            <li>Calle 57</li>
+            <li>Calle 63</li>
+            <li>Flores</li>
+            <li>Calle 72</li>
+            <li>Calle 76</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalnorte' } )" style="background-color: #5bb900"> B| Norte </button>
+
+      <div class="highslide-html-content" id="troncalnorte">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>B| Norte </h2>
+          <img width="370" src="imagenes/troncales/AutoNorte.jpg" alt="gráfica alusiva troncal Norte " />
+          <ul>
+            <li>Héroes</li>
+            <li>Calle 85</li>
+            <li>Virrey</li>
+            <li>Calle 100</li>
+            <li>Calle 106</li>
+            <li>Pepe Sierra</li>
+            <li>Calle 127</li>
+            <li>Prado</li>
+            <li>Alcalá</li>
+            <li>Calle 142</li>
+            <li>Calle 146</li>
+            <li>Mazurén</li>
+            <li>Calle 161</li>
+            <li>Toberín</li>
+            <li>Portal del Norte</li>
+            <li>Calle 187</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalSuba' } )" style="background-color: #ffbd00"> C| Suba </button>
+
+      <div class="highslide-html-content" id="troncalSuba">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>C| Suba</h2>
+          <img width="370" src="imagenes/troncales/Suba.jpg" alt="gráfica alusiva Troncal Suba " />
+          <ul>
+            <li>Portal de Suba</li>
+            <li>La Campiña</li>
+            <li>Suba - Tv.91</li>
+            <li>21 Ángeles</li>
+            <li>Gratamira</li>
+            <li>Suba Av. Boyacá</li>
+            <li>Niza Calle 127</li>
+            <li>Humedal Córdoba</li>
+            <li>Shaio</li>
+            <li>Puente Largo</li>
+            <li>Suba Calle 100</li>
+            <li>Suba Calle 95</li>
+            <li>Rionegro</li>
+            <li>San Martín</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncal80' } )" style="background-color: #8a64ad"> D| Portal 80 </button>
+
+      <div class="highslide-html-content" id="troncal80">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>D| Portal 80</h2>
+          <img width="370" src="imagenes/troncales/Calle80.jpg" alt="gráfica alusiva Portal de la 80 " />
+          <ul>
+            <li>Portal de la 80</li>
+            <li>Quirigua</li>
+            <li>Carrera 90</li>
+            <li>Avenida Cali</li>
+            <li>Granja – Carrera 77</li>
+            <li>Minuto de Dios</li>
+            <li>Boyacá</li>
+            <li>Ferias</li>
+            <li>Avenida 68</li>
+            <li>Carrera 53</li>
+            <li>Carrera 47</li>
+            <li>Escuela Militar</li>
+            <li>Polo</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalNQS' } )" style="background-color: #c06d00"> E| NQS Central </button>
+
+      <div class="highslide-html-content" id="troncalNQS">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>E| NQS Central</h2>
+          <img width="370" src="imagenes/troncales/NQSCentral.jpg" alt="gráfica alusiva NQS central " />
+          <ul>
+            <li>Guatoque - Veraguas</li>
+            <li>Tygua - San José</li>
+            <li>Ricaurte</li>
+            <li>Paloquemao</li>
+            <li>CAD</li>
+            <li>Avenida Eldorado</li>
+            <li>Universidad Nacional</li>
+            <li>El Campín - Universidad Antonio Nariño</li>
+            <li>Movistar Arena</li>
+            <li>Simón Bolívar</li>
+            <li>Avenida Chile</li>
+            <li>NQS Calle 75</li>
+            <li>La Castellana</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalAmericas' } )" style="background-color: #fe020f"> F| Portal Américas </button>
+
+      <div class="highslide-html-content" id="troncalAmericas">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>F| Troncal Americas</h2>
+          <img width="370" src="imagenes/troncales/Americas.jpg" alt="gráfica alusiva portal Americas " />
+          <ul>
+            <li>Portal de Las Américas</li>
+            <li>Patio Bonito</li>
+            <li>Biblioteca Tintal</li>
+            <li>Transversal 86</li>
+            <li>Banderas</li>
+            <li>Mandalay</li>
+            <li>Mundo Aventura</li>
+            <li>Marsella</li>
+            <li>Pradera</li>
+            <li>Américas Carrera 53 A</li>
+            <li>Puente Aranda</li>
+            <li>Carrera 43</li>
+            <li>Zona Industrial</li>
+            <li>CDS Carrera 32</li>
+            <li>Ricaurte</li>
+            <li>Sans Façon Carrera 22</li>
+            <li>De La Sabana</li>
+            <li>Avenida Jiménez</li>
+          </ul>
+        </div>
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalNQSsur' } )" style="background-color: #009cd9"> G| NQS sur </button>
+
+      <div class="highslide-html-content" id="troncalNQSsur">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>G| NQS sur</h2>
+          <img width="370" src="imagenes/troncales/NQSSur.jpg" alt="gráfica alusiva troncal NQS sur " />
+          <ul>
+            <li>San Mateo</li>
+            <li>Terreros</li>
+            <li>León XIII</li>
+            <li>La Despensa</li>
+            <li>Estación Bosa</li>
+            <li>Portal del Sur</li>
+            <li>Perdomo</li>
+            <li>Madelena</li>
+            <li>Sevillana</li>
+            <li>Venecia</li>
+            <li>Alquería</li>
+            <li>General Santander</li>
+            <li>NQS Calle 38 A Sur</li>
+            <li>NQS Calle 30 Sur</li>
+            <li>SENA</li>
+            <li>Santa Isabel</li>
+            <li>Comuneros</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+            
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalCaracasSur' } )" style="background-color: #ff8601"> H| Caracas sur </button>
+
+      <div class="highslide-html-content" id="troncalCaracasSur">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>H| Caracas Sur</h2>
+          <img width="370" src="imagenes/troncales/CaracasSur.jpg" alt="gráfica alusiva troncal caracas sur " />
+          <ul>
+            <li>Portal de Usme</li>
+            <li>Molinos</li>
+            <li>Consuelo</li>
+            <li>Socorro</li>
+            <li>Santa Lucía</li>
+            <li>Calle 40 Sur</li>
+            <li>Quiroga</li>
+            <li>Olaya</li>
+            <li>Restrepo</li>
+            <li>Fucha</li>
+            <li>Nariño</li>
+            <li>Hortúa</li>
+            <li>Hospital</li>
+
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalTunal' } )" style="background-color: #ff8601"> H| Caracas Tunal </button>
+
+      <div class="highslide-html-content" id="troncalTunal">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>H| Caracas sur Tunal</h2>
+          <img width="370" src="imagenes/troncales/CaracasTunalSur.jpg" alt="gráfica alusiva troncal Tunal " />
+          <ul>
+            <li>Portal del Tunal</li>
+            <li>Parque</li>
+            <li>Biblioteca</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalEje' } )" style="background-color: #f5a3af"> J| Eje Ambiental </button>
+
+      <div class="highslide-html-content" id="troncalEje">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>J| Eje Ambiental</h2>
+          <img width="370" src="imagenes/troncales/EjeAmbiental.jpg" alt="gráfica alusiva troncal eje Ambiental " />
+          <ul>
+            <li>Museo del Oro</li>
+            <li>Las Aguas</li>
+            <li>Universidades</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncal26' } )" style="background-color: #e3b077"> K| Calle 26 </button>
+
+      <div class="highslide-html-content" id="troncal26">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>K| Calle 26</h2>
+          <img width="370" src="imagenes/troncales/troncales/Calle26.jpg" alt="gráfica alusiva troncal Calle 26 " />
+          <ul>
+            <li>Portal Eldorado</li>
+            <li>Modelia</li>
+            <li>Normandía</li>
+            <li>Avenida Rojas</li>
+            <li>El Tiempo - Maloka</li>
+            <li>Salitre - El Greco</li>
+            <li>CAN</li>
+            <li>Gobernación</li>
+            <li>Quinta Paredes</li>
+            <li>Corferias</li>
+            <li>Ciudad Universitaria</li>
+            <li>Concejo de Bogotá</li>
+            <li>Centro Memoria</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncal10' } )" style="background-color: #009a9f"> L| Carrera 10 </button>
+
+      <div class="highslide-html-content" id="troncal10">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>L| Carrera10</h2>
+          <img width="370" src="imagenes/troncales/CarreraDecima.jpg" alt="gráfica alusiva troncal Carrera 10 " />
+          <ul>
+            <li>Portal 20 de Julio</li>
+            <li>Country Sur</li>
+            <li>Avenida Primero de Mayo</li>
+            <li>Ciudad Jardín - Universidad Antonio Nariño</li>
+            <li>Policarpa</li>
+            <li>San Bernardo</li>
+            <li>Bicentenario</li>
+            <li>San Victorino</li>
+            <li>Las Nieves</li>
+            <li>San Diego</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+
+      </div>
+
+      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalMuseo' } )" style="background-color: #c30f7a"> M| Carrera Septima </button>
+
+      <div class="highslide-html-content" id="troncalMuseo">
+
+        <div class="highslide-header">
+          <ul>
+            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
+            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
+          </ul>
+        </div>
+
+        <div class="highslide-body">
+          <h2>M| Carrera Septima</h2>
+          <img width="370" src="imagenes/troncales/CarreraSeptima.jpg" alt="gráfica alusiva troncal Carrera Septima " />
+          <ul>
+            <li>Museo Nacional</li>
+          </ul>
+        </div>
+
+        <div class="highslide-footer">
+          <div><span class="highslide-resize" title="Resize"></span></div>
+        </div>
+      </div>
+
+  </aside>
     </div>
+        
+        <div class="estaciones-mapa">
+        <img src="imagenes/mapa1.png" alt="" usemap="#imgmap1" style="border: none">
+        <map id="imgmap1" name="imgmap1">
+        <!--Troncal A: Caracas---------------------------------------------------->
+        <area shape="circle" alt="Calle 76" title="Calle 76" coords="275,146,6" href="imagenes/paradas/a1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 72" title="Calle 72" coords="294,146,6" href="imagenes/paradas/a2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Flores" title="Flores" coords="307,146,6" href="imagenes/paradas/a3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 63" title="Calle 63" coords="319,146,5" href="imagenes/paradas/a4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 57" title="Calle 57" coords="332,146,6" href="imagenes/paradas/a5.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Marly" title="Marly" coords="344,146,6" href="imagenes/paradas/a6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 45" title="Calle 45" coords="356,146,5" href="imagenes/paradas/a7.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="AV. 39" title="AV. 39" coords="369,146,6" href="imagenes/paradas/a8.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 34" title="Calle 34" coords="382,147,5" href="imagenes/paradas/a9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 26" title="Calle 26" coords="395,146,6" href="imagenes/paradas/a10.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 22" title="Calle 22" coords="420,146,6" href="imagenes/paradas/a11.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 19" title="Calle 19" coords="433,148,6" href="imagenes/paradas/a12.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="AV. Jimenez" title="AV. Jimenez" coords="448,147,5" href="imagenes/paradas/a13.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Tercer Milenio" title="Tercer Milenio" coords="462,147,6" href="imagenes/paradas/a14.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal B:Norte------------------------------------------------------->
+        <area shape="circle" alt="Terminal" title="Terminal" coords="25,145,6" href="imagenes/paradas/b1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 187" title="Calle 187" coords="45,146,6" href="imagenes/paradas/b2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Portal del Norte" title="Portal del Norte" coords="64,147,8" href="imagenes/paradas/b3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Toberin" title="Toberin" coords="79,147,5" href="imagenes/paradas/b4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 161" title="Calle 161" coords="91,147,4" href="imagenes/paradas/b5.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Mazuren" title="Mazuren" coords="104,147,6" href="imagenes/paradas/b6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 146" title="Calle 146" coords="117,148,4" href="imagenes/paradas/b7.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 142" title="Calle 142" coords="129,148,5" href="imagenes/paradas/b8.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Alcalá" title="Alcalá" coords="141,147,5" href="imagenes/paradas/b9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Prado" title="Prado" coords="153,146,5" href="imagenes/paradas/b10.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 127" title="Calle 127" coords="167,147,4" href="imagenes/paradas/b11.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Pepe Sierra" title="Pepe Sierra" coords="179,148,5" href="imagenes/paradas/b12.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 106" title="Calle 106" coords="191,147,5" href="imagenes/paradas/b13.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 100" title="Calle 100" coords="205,147,5" href="imagenes/paradas/b14.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Virrey" title="Virrey" coords="222,147,5" href="imagenes/paradas/b15.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 85" title="Calle 85" coords="235,148,4" href="imagenes/paradas/b16.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Héroes" title="Héroes" coords="247,147,5" href="imagenes/paradas/b17.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal C:Suba------------------------------------------------------->
+        <area shape="circle" alt="Portal de Suba" title="Portal de Suba" coords="101,376,9" href="imagenes/paradas/c1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Campiña" title="Campiña" coords="101,358,5" href="imagenes/paradas/c2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Suba-TV 91" title="Suba-TV 91" coords="101,340,6" href="imagenes/paradas/c3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="21 Angeles" title="21 Angeles" coords="103,323,5" href="imagenes/paradas/c4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Gratamira" title="Gratamira" coords="102,303,4" href="imagenes/paradas/c5.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Suba-AV. Boyacá" title="Suba-AV.Boyacá" coords="106,289,6" href="imagenes/paradas/c6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Niza-CL 127" title="Niza-CL 127" coords="118,273,6" href="imagenes/paradas/c7.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Humedal Cordoba" title="Humedal Cordoba" coords="126,258,6" href="imagenes/paradas/c8.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Shaio" title="Shaio" coords="142,250,5" href="imagenes/paradas/c9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Puentelargo" title="Puentelargo" coords="155,250,5" href="imagenes/paradas/c10.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Suba-CL 100" title="Suba-CL 100" coords="169,249,6" href="imagenes/paradas/c11.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Suba-CL 95" title="Suba-CL 95" coords="183,250,6" href="imagenes/paradas/c12.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Rionegro" title="Rionegro" coords="197,251,5" href="imagenes/paradas/c13.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="San Martin" title="San Martin" coords="211,249,6" href="imagenes/paradas/c14.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal D:CL 80------------------------------------------------------->
+        <area shape="circle" alt="Portal de la 80" title="Portal de la 80" coords="172,453,9" href="imagenes/paradas/d1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Quirigua" title="Quirigua" coords="171,432,5" href="imagenes/paradas/d2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Carrera 90" title="Carrera 90" coords="171,415,5" href="imagenes/paradas/d3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Avenida Cali" title="Avenida Cali" coords="171,395,5" href="imagenes/paradas/d4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Granja-Carrera 77" title="Granja-Carrera 77" coords="171,374,5" href="imagenes/paradas/d5.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Minuto de Dios" title="Minuto de Dios" coords="171,358,4" href="imagenes/paradas/d6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Boyacá" title="Boyacá" coords="181,333,6" href="imagenes/paradas/d7.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Ferias" title="Ferias" coords="190,319,6" href="imagenes/paradas/d8.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Avenida 68" title="Avenida 68" coords="201,304,6" href="imagenes/paradas/d9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Carrera 53" title="Carrera 53" coords="211,291,5" href="imagenes/paradas/d10.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Carrera 47" title="Carrera 47" coords="221,276,4" href="imagenes/paradas/d11.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Esc. Militar" title="Esc. Militar" coords="235,256,6" href="imagenes/paradas/d12.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Polo" title="Polo" coords="265,200,6" href="imagenes/paradas/d13.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal E:NQS Central------------------------------------------------------->
+        <area shape="circle" alt="Castellana" title="Castellana" coords="216,200,5" href="imagenes/paradas/e1.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="NQS-Calle 75" title="NQS-Calle 75" coords="277,250,6" href="imagenes/paradas/e2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="AV. Chile" title="AV. Chile" coords="296,250,6" href="imagenes/paradas/e3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Simon Bolviar" title="Simon Bolviar" coords="313,249,6" href="imagenes/paradas/e4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Movistar Arena" title="Movistar Arena" coords="331,249,6" href="imagenes/paradas/e5.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Campin-U. Antonio Nariño" title="Campin-U. Antonio Nariño" coords="348,249,6" href="imagenes/paradas/e6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="U. Nacional" title="U. Nacional" coords="364,250,6" href="imagenes/paradas/e7.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="AV. El Dorado" title="AV. El Dorado" coords="384,250,6" href="imagenes/paradas/e8.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="CAD" title="CAD" coords="418,249,7" href="images/paradanes/e9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Paloquemao" title="Paloquemao" coords="435,250,5" href="imagenes/paradas/e10.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Ricaurte" title="Ricaurte" coords="453,250,6" href="imagenes/paradas/e11.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Guatoque Veraguas" title="Guatoque Veraguas" coords="475,215,6" href="imagenes/paradas/e12.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Tygua-San Jose" title="Tygua-San Jose" coords="474,182,6" href="imagenes/paradas/e13.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal F:Américas------------------------------------------------------->
+        <area shape="circle" alt="Portal Americas" title="Portal Americas" coords="537,480,9" href="imagenes/paradas/f1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Patio Bonito" title="Patio Bonito" coords="519,479,5" href="imagenes/paradas/f2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Biblioteca Tintal" title="Biblioteca Tintal" coords="503,477,5" href="imagenes/paradas/f3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Transversal 86" title="Transversal 86" coords="502,457,6" href="imagenes/paradas/f4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Banderas" title="Banderas" coords="502,436,6" href="imagenes/paradas/f5.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Mandalay" title="Mandalay" coords="496,415,6" href="imagenes/paradas/f6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Mundo Aventura" title="Mundo Aventura" coords="484,399,5" href="imagenes/paradas/f7.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Marsella" title="Marsella" coords="475,384,6" href="imagenes/paradas/f8.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Pradera" title="Pradera" coords="463,367,5" href="imagenes/paradas/f9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Americas-KR 53A" title="Americas-KR 53A" coords="451,353,5" href="imagenes/paradas/f10.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Puente Aranda" title="Puente Aranda" coords="447,333,6" href="imagenes/paradas/f11.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Carrera 43" title="Carrera 43" coords="446,314,6" href="imagenes/paradas/f12.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Zona Industrial" title="Zona Industrial" coords="445,298,5" href="imagenes/paradas/f13.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="CDS Carrera 32" title="CDS Carrera 32" coords="445,280,6" href="imagenes/paradas/f14.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Ricaurte" title="Ricaurte" coords="445,239,6" href="imagenes/paradas/f15.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="San Facon" title="San Facon" coords="445,212,6" href="imagenes/paradas/f16.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="De La Sabana" title="De La Sabana" coords="446,185,6" href="imagenes/paradas/f17.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="AV. Jimenez" title="AV. Jimenez" coords="445,137,5" href="imagenes/paradas/f18.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal G:NQS Sur------------------------------------------------------->
+        <area shape="circle" alt="San Mateo" title="San Mateo" coords="614,517,5" href="imagenes/paradas/g1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Terreros-Hospital C.V." title="Terreros-Hospital C.V." coords="603,499,5" href="imagenes/paradas/g2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Leon XIII" title="Leon XIII" coords="592,484,6" href="imagenes/paradas/g3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="La Despensa" title="La Despensa" coords="579,464,6" href="imagenes/paradas/g4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Bosa" title="Bosa" coords="564,444,7" href="imagenes/paradas/g5.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Portal Sur" title="Portal Sur" coords="550,409,9" href="imagenes/paradas/g6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Perdomo" title="Perdomo" coords="550,388,5" href="imagenes/paradas/g7.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Madelena" title="Madelena" coords="550,366,6" href="imagenes/paradas/g8.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Servillana" title="Servillana" coords="552,347,5" href="imagenes/paradas/g9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Venecia" title="Venecia" coords="552,325,5" href="imagenes/paradas/g10.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Alqueria" title="Alqueria" coords="549,313,5" href="imagenes/paradas/g11.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="General Santander" title="General Santander" coords="542,302,5" href="imagenes/paradas/g12.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="NQS-CL 38 AS" title="NQS-CL 38 AS" coords="534,288,5" href="imagenes/paradas/g13.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="NQS-CL 30 S" title="NQS-CL 30 S" coords="523,272,5" href="imagenes/paradas/g14.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="SENA" title="SENA" coords="511,257,5" href="imagenes/paradas/g15.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Santa Isabel" title="Santa Isabel" coords="497,250,6" href="imagenes/paradas/g16.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Comuneros" title="Comuneros" coords="483,250,5" href="imagenes/paradas/g17.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal H:Caracas Sur------------------------------------------------------->
+        <area shape="circle" alt="Hospital" title="Hospital" coords="487,147,6" href="imagenes/paradas/h1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Hortua" title="Hortua" coords="500,146,5" href="imagenes/paradas/h2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Nariño" title="Nariño" coords="515,146,6" href="imagenes/paradas/h3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Fucha" title="Fucha" coords="531,150,6" href="imagenes/paradas/h4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Restrepo" title="Restrepo" coords="542,166,4" href="imagenes/paradas/h5.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Olaya" title="Olaya" coords="553,182,5" href="imagenes/paradas/h6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Quiroga" title="Quiroga" coords="564,198,5" href="imagenes/paradas/h7.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Calle 40 S" title="Calle 40 S" coords="575,213,4" href="imagenes/paradas/h8.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Santa Lucia" title="Santa Lucia" coords="588,230,6" href="imagenes/paradas/h9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Socorro" title="Socorro" coords="608,240,6" href="imagenes/paradas/h10.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Consuelo" title="Consuelo" coords="623,239,6" href="imagenes/paradas/h11.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Molinos" title="Molinos" coords="638,239,5" href="imagenes/paradas/h12.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Portal Usme" title="Portal Usme" coords="657,240,9" href="imagenes/paradas/h13.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Biblioteca" title="Biblioteca" coords="609,262,7" href="imagenes/paradas/h14.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Parque" title="Parque" coords="621,277,6" href="imagenes/paradas/h15.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Portal Tunal" title="Portal Tunal" coords="624,316,9" href="imagenes/paradas/h16.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal J:Eje Ambiental------------------------------------------------------->
+        <area shape="circle" alt="Las Aguas" title="Las Aguas" coords="417,17,5" href="imagenes/paradas/j1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Museo del Oro" title="Museo del Oro" coords="435,46,4" href="imagenes/paradas/j2.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal K:CL 26------------------------------------------------------->
+        <area shape="circle" alt="Portal el Dorado" title="Portal el Dorado" coords="349,520,9" href="imagenes/paradas/k1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Modelia" title="Modelia" coords="348,493,6" href="imagenes/paradas/k2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Normandia" title="Normandia" coords="348,470,5" href="imagenes/paradas/k3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="AV. Rojas" title="AV. Rojas" coords="348,448,6" href="imagenes/paradas/k4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="El Tiempo-Maloka" title="El Tiempo-Maloka" coords="348,425,5" href="imagenes/paradas/k5.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Salitre-El Greco" title="Salitre-El Greco" coords="349,402,6" href="imagenes/paradas/k6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="CAN" title="CAN" coords="350,377,5" href="imagenes/paradas/k7.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Gobernacion" title="Gobernacion" coords="352,348,6" href="imagenes/paradas/k8.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Quinta Paredes" title="Quinta Paredes" coords="359,334,6" href="imagenes/paradas/k9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Corferias" title="Corferias" coords="372,313,6" href="imagenes/paradas/k10.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Ciudad Universitaria" title="Ciudad Universitaria" coords="384,290,6" href="imagenes/paradas/k11.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Concejo Bogota" title="Concejo Bogota" coords="408,216,6" href="imagenes/paradas/k12.png" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Centro Memoria" title="Centro Memoria" coords="407,186,4" href="imagenes/paradas/k13.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Universidades" title="Universidades" coords="405,17,5" href="imagenes/paradas/k14.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal L:KR 10------------------------------------------------------->
+        <area shape="circle" alt="Portal 20 de Julio" title="Portal 20 de Julio" coords="577,78,9" href="imagenes/paradas/l1.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Country Sur" title="Country Sur" coords="558,79,6" href="imagenes/paradas/l2.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="AV. 1 Mayo" title="AV. 1 Mayo" coords="543,79,6" href="imagenes/paradas/l3.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Ciudad Jardin-UAN" title="Ciudad Jardin-UAN" coords="526,79,6" href="imagenes/paradas/l4.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Policarpa" title="Policarpa" coords="511,80,5" href="imagenes/paradas/l5.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="San Bernardo" title="San Bernardo" coords="493,79,5" href="imagenes/paradas/l6.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Bicentenario" title="Bicentenario" coords="472,79,5" href="imagenes/paradas/l7.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="San Victorino" title="San Victorino" coords="452,77,6" href="imagenes/paradas/l8.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="Las Nieves" title="Las Nieves" coords="432,78,5" href="imagenes/paradas/l9.jpg" onclick="return hs.expand(this)" />
+        <area shape="circle" alt="San Diego" title="San Diego" coords="413,78,6" href="imagenes/paradas/l10.jpg" onclick="return hs.expand(this)" />
+        <!--Troncal M:KR 7------------------------------------------------------->
+        <area shape="circle" alt="Museo Nacional" title="Museo Nacional" coords="391,78,7" href="imagenes/paradas/m1.jpg" onclick="return hs.expand(this)" />
+        
+    </map>
+</div>
+        </div>
 </div>
 </section>
     <footer id="footer">
