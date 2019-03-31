@@ -11,6 +11,7 @@
     <link rel="Stylesheet" href="css/estilosbanner.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/nav.css" />
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Mapa</title>
 
     <script type="text/javascript" src="highslide/highslide-full.js"></script>
@@ -25,25 +26,31 @@
     </script>
 </head>
 <body onclick="hs.close(all)">
+    <section class="contenedor">
     <header>
         <img src="imagenes/logo.png" class="logo"width="120" height="120" />
         <img src="imagenes/tagline.png" class="tagline" width="500" height="100"/>
         </header>
     
         <nav class="navegacion">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#interes">Sitios de interes</a></li>
-                <li><a href="#">Servicios</a>
-                    <ul class="submenu">
-                        <li><a href="mapa.html">Mapa de Troncales</a></li>
-                        <li><a href="mapadesitio.html">Mapa del sito</a></li>
-                        <li><a href="#">Servicio #3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#footer">Contacto</a></li>
-            </ul>
-            </nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#interes">Sitios de interes</a></li>
+                    <li><a href="#">Servicios</a>
+                        <ul class="submenu">
+                            <li><a href="mapa.html">Mapa de Troncales</a></li>
+                            <li><a href="mapadesitio.html">Mapa del sito</a></li>
+                            <li><a href="#">Servicio #3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+                </nav>
+    <div class="sub-container">
+            <div class="encabezado">
+                    <a name="noticias" id="noticias"></a>
+                    <h2>Haga click sobre la troncal para ver detalles.</h2>
+                  </div>
     <div class="mapa">
         <img src="imagenes/mapa.png" alt="mapa de troncales" usemap="#imgmap1" style="border: none"/>
         <map id="imgmap1" name="imgmap1">
@@ -458,6 +465,8 @@
             </div>
         </map>
     </div>
+</div>
+</section>
     <footer id="footer">
         <div>
             <br>

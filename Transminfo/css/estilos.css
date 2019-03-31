@@ -1,17 +1,13 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("../imagenes/fondo-nubes.jpg");
+    font-family: 'Roboto', sans-serif;
     background-size: 100%;
 }
 
 footer{
-    background-color: #172340;
+    background-color: #0D4365;
     color: white;
 }
 
-footer div{
-    padding-left: 12%;
-}
 
 footer div a{
     text-decoration: none;
@@ -25,15 +21,15 @@ footer ul{
 .contenedor{
     border: 1px solid black;
     margin: 0 10%;
-    background-color: white;
     padding: 0px;
     width: 1003px;
     height: 100%;
+    margin: 0px auto;
 }
 
 .encabezado{
-    align:"center";
-    background-color: #172340;
+    margin:0px auto;
+    background-color: #95858D;
     color: white;
     padding-left: 33%;
 }
