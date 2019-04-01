@@ -1,25 +1,5 @@
-var db = new loki('trasmilenio.db', {
-  autoload: true,
-  autoloadCallback : databaseInitialize,
-  autosave: true, 
-  autosaveInterval: 4000
-});
-
-var estaciones = db.addCollection('estaciones');
-var rutas = db.addCollection('rutas');
-
-
-function databaseInitialize() {
-  if (!db.getCollection('estaciones')) {
-    db.addCollection('estaciones');
-  }
-  if (!db.getCollection('rutas')) {
-    db.addCollection('rutas');
-  }
-}   
-         
-
-    //llenado de la collection estaciones, prueba de llenado de la collection rutas
+var db = new loki('trasmilenio.db');
+    var estaciones = db.addCollection('estaciones');
 
     $.ajax({
       method: "POST",
@@ -27,35 +7,37 @@ function databaseInitialize() {
       url: "http://datosabiertos.bogota.gov.co/api/3/action/datastore_search",
 
     })
-    .done(function (data) {
+      .done(function (data) {
 
-      data.result.records.forEach(item => {
-        estaciones.insert({
-          Estacion: item.Name,
-          Troncal: item.Corredor,
-          Codigo: item.Id,
-          LatLon: { Lat: item.Latitud, Lon: item.Longitud },
-          Rutas:[]
+        data.result.records.forEach(item => {
+          estaciones.insert({
+            Estacion: item.Name,
+            Troncal: item.Corredor,
+            Codigo: item.Id,
+            LatLon: { Lat: item.Latitud, Lon: item.Longitud },
+            Rutas:[]
+          });
+            localStorage.setItem(item.Name, item.Corredor);
         });
-          localStorage.setItem(item.Name, item.Corredor);
+        
       });
-      
-    });
-      function Ver(darta) {
-        //estaciones.find().forEach(item => {
-          document.getElementById(darta).innerHTML = '';
-          const app = document.getElementById(darta);
-          const container = document.createElement('div');
-          container.setAttribute('class', 'container');
-          app.appendChild(container);
-          container.innerHTML = '';
-         estaciones.find({'Troncal': localStorage.getItem(darta)}).forEach(item => {
-          const card = document.createElement('ul');
-          card.setAttribute('class', 'card');
-          const li = document.createElement('li');
-          li.textContent = item.Estacion;
-          container.appendChild(card);
-          card.appendChild(li);
-        });
-      }
-      
+
+
+
+    function Ver(darta) {
+      //estaciones.find().forEach(item => {
+        document.getElementById(darta).innerHTML = '';
+        const app = document.getElementById(darta);
+        const container = document.createElement('div');
+        container.setAttribute('class', 'container');
+        app.appendChild(container);
+        container.innerHTML = '';
+       estaciones.find({'Troncal': localStorage.getItem(darta)}).forEach(item => {
+        const card = document.createElement('ul');
+        card.setAttribute('class', 'card');
+        const li = document.createElement('li');
+        li.textContent = item.Estacion;
+        container.appendChild(card);
+        card.appendChild(li);
+      });
+    }
