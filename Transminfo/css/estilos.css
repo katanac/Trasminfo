@@ -16,6 +16,7 @@ footer div a{
 
 footer ul{
     list-style: none;
+    text-decoration: none;
 }
 
 .contenedor{
@@ -29,7 +30,7 @@ footer ul{
 
 .encabezado{
     margin:0px auto;
-    background-color: #95858D;
+    background-color: rgb(17, 16, 16);
     color: white;
     padding-left: 33%;
 }
@@ -57,3 +58,4 @@ footer ul{
 .tabla a:focus{
     color: blue;
 }
+
