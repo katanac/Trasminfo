@@ -27,22 +27,35 @@ function databaseInitialize() {
       url: "http://datosabiertos.bogota.gov.co/api/3/action/datastore_search",
 
     })
-      .done(function (data) {
+    .done(function (data) {
 
-        data.result.records.forEach(item => {
-          estaciones.insert({
-            n_Estacion: item.Name,
-            Troncal: item.Corredor,
-            Codigo: item.Id,
-            LatLon: { Lat: item.Latitud, Lon: item.Longitud },
-            Rutas:[]
-          });
-          rutas.insert({
-            n_Parada: item.Corredor
-          });
+      data.result.records.forEach(item => {
+        estaciones.insert({
+          Estacion: item.Name,
+          Troncal: item.Corredor,
+          Codigo: item.Id,
+          LatLon: { Lat: item.Latitud, Lon: item.Longitud },
+          Rutas:[]
         });
-        console.log("Registros importados: " + data.result.records.length);
-        
+          localStorage.setItem(item.Name, item.Corredor);
       });
-
-
+      
+    });
+      function Ver(darta) {
+        //estaciones.find().forEach(item => {
+          document.getElementById(darta).innerHTML = '';
+          const app = document.getElementById(darta);
+          const container = document.createElement('div');
+          container.setAttribute('class', 'container');
+          app.appendChild(container);
+          container.innerHTML = '';
+         estaciones.find({'Troncal': localStorage.getItem(darta)}).forEach(item => {
+          const card = document.createElement('ul');
+          card.setAttribute('class', 'card');
+          const li = document.createElement('li');
+          li.textContent = item.Estacion;
+          container.appendChild(card);
+          card.appendChild(li);
+        });
+      }
+      
