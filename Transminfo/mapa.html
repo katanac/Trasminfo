@@ -17,6 +17,9 @@
     <script type="text/javascript" src="highslide/highslide-full.js"></script>
     <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
     <link rel="stylesheet" type="text/css" href="css/estiloMapa.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="http://lokijs.org/bower_components/lokijs/src/lokijs.js"></script>
 
     <script type="text/javascript">
         hs.graphicsDir = 'highslide/graphics/';
@@ -26,7 +29,7 @@
         //hs.dimmingOpacity = 0.75;
     </script>
 </head>
-<body onclick="hs.close(all)">
+<body>
     <section class="contenedor">
     <header>
         <img src="imagenes/logo.png" class="logo"width="120" height="120" />
@@ -69,22 +72,8 @@
         <div class="highslide-body">
           <h2>A| Caracas</h2>
           <img width="370" src="imagenes/troncales/Caracas.jpg" alt="gráfica alusiva troncal caracas " />
-          <ul>
-            <li>Tercer Milenio</li>
-            <li>Avenida Jiménez</li>
-            <li>Calle 19</li>
-            <li>Calle 22</li>
-            <li>Calle 26</li>
-            <li>Calle 34</li>
-            <li>Avenida 39</li>
-            <li>Calle 45</li>
-            <li>Marly</li>
-            <li>Calle 57</li>
-            <li>Calle 63</li>
-            <li>Flores</li>
-            <li>Calle 72</li>
-            <li>Calle 76</li>
-          </ul>
+            <div id="Marly"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Marly')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -107,25 +96,8 @@
         <div class="highslide-body">
           <h2>B| Norte </h2>
           <img width="370" src="imagenes/troncales/AutoNorte.jpg" alt="gráfica alusiva troncal Norte " />
-          <ul>
-            <li>Héroes</li>
-            <li>Calle 85</li>
-            <li>Virrey</li>
-            <li>Calle 100</li>
-            <li>Calle 106</li>
-            <li>Pepe Sierra</li>
-            <li>Calle 127</li>
-            <li>Prado</li>
-            <li>Alcalá</li>
-            <li>Calle 142</li>
-            <li>Calle 146</li>
-            <li>Mazurén</li>
-            <li>Calle 161</li>
-            <li>Toberín</li>
-            <li>Portal del Norte</li>
-            <li>Calle 187</li>
-            <li>Terminal</li>
-          </ul>
+          <div id="Terminal"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Terminal')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -148,22 +120,8 @@
         <div class="highslide-body">
           <h2>C| Suba</h2>
           <img width="370" src="imagenes/troncales/Suba.jpg" alt="gráfica alusiva Troncal Suba " />
-          <ul>
-            <li>Portal de Suba</li>
-            <li>La Campiña</li>
-            <li>Suba - Tv.91</li>
-            <li>21 Ángeles</li>
-            <li>Gratamira</li>
-            <li>Suba Av. Boyacá</li>
-            <li>Niza Calle 127</li>
-            <li>Humedal Córdoba</li>
-            <li>Shaio</li>
-            <li>Puente Largo</li>
-            <li>Suba Calle 100</li>
-            <li>Suba Calle 95</li>
-            <li>Rionegro</li>
-            <li>San Martín</li>
-          </ul>
+          <div id="Rionegro"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Rionegro')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -186,21 +144,8 @@
         <div class="highslide-body">
           <h2>D| Portal 80</h2>
           <img width="370" src="imagenes/troncales/Calle80.jpg" alt="gráfica alusiva Portal de la 80 " />
-          <ul>
-            <li>Portal de la 80</li>
-            <li>Quirigua</li>
-            <li>Carrera 90</li>
-            <li>Avenida Cali</li>
-            <li>Granja – Carrera 77</li>
-            <li>Minuto de Dios</li>
-            <li>Boyacá</li>
-            <li>Ferias</li>
-            <li>Avenida 68</li>
-            <li>Carrera 53</li>
-            <li>Carrera 47</li>
-            <li>Escuela Militar</li>
-            <li>Polo</li>
-          </ul>
+          <div id="Quirigua"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Quirigua')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -223,21 +168,8 @@
         <div class="highslide-body">
           <h2>E| NQS Central</h2>
           <img width="370" src="imagenes/troncales/NQSCentral.jpg" alt="gráfica alusiva NQS central " />
-          <ul>
-            <li>Guatoque - Veraguas</li>
-            <li>Tygua - San José</li>
-            <li>Ricaurte</li>
-            <li>Paloquemao</li>
-            <li>CAD</li>
-            <li>Avenida Eldorado</li>
-            <li>Universidad Nacional</li>
-            <li>El Campín - Universidad Antonio Nariño</li>
-            <li>Movistar Arena</li>
-            <li>Simón Bolívar</li>
-            <li>Avenida Chile</li>
-            <li>NQS Calle 75</li>
-            <li>La Castellana</li>
-          </ul>
+          <div id="CAD"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('CAD')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -260,26 +192,8 @@
         <div class="highslide-body">
           <h2>F| Troncal Americas</h2>
           <img width="370" src="imagenes/troncales/Americas.jpg" alt="gráfica alusiva portal Americas " />
-          <ul>
-            <li>Portal de Las Américas</li>
-            <li>Patio Bonito</li>
-            <li>Biblioteca Tintal</li>
-            <li>Transversal 86</li>
-            <li>Banderas</li>
-            <li>Mandalay</li>
-            <li>Mundo Aventura</li>
-            <li>Marsella</li>
-            <li>Pradera</li>
-            <li>Américas Carrera 53 A</li>
-            <li>Puente Aranda</li>
-            <li>Carrera 43</li>
-            <li>Zona Industrial</li>
-            <li>CDS Carrera 32</li>
-            <li>Ricaurte</li>
-            <li>Sans Façon Carrera 22</li>
-            <li>De La Sabana</li>
-            <li>Avenida Jiménez</li>
-          </ul>
+          <div id="Banderas"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Banderas')" id="boton">
         </div>
       </div>
 
@@ -297,25 +211,8 @@
         <div class="highslide-body">
           <h2>G| NQS sur</h2>
           <img width="370" src="imagenes/troncales/NQSSur.jpg" alt="gráfica alusiva troncal NQS sur " />
-          <ul>
-            <li>San Mateo</li>
-            <li>Terreros</li>
-            <li>León XIII</li>
-            <li>La Despensa</li>
-            <li>Estación Bosa</li>
-            <li>Portal del Sur</li>
-            <li>Perdomo</li>
-            <li>Madelena</li>
-            <li>Sevillana</li>
-            <li>Venecia</li>
-            <li>Alquería</li>
-            <li>General Santander</li>
-            <li>NQS Calle 38 A Sur</li>
-            <li>NQS Calle 30 Sur</li>
-            <li>SENA</li>
-            <li>Santa Isabel</li>
-            <li>Comuneros</li>
-          </ul>
+          <div id="Madelena"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Madelena')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -338,54 +235,13 @@
         <div class="highslide-body">
           <h2>H| Caracas Sur</h2>
           <img width="370" src="imagenes/troncales/CaracasSur.jpg" alt="gráfica alusiva troncal caracas sur " />
-          <ul>
-            <li>Portal de Usme</li>
-            <li>Molinos</li>
-            <li>Consuelo</li>
-            <li>Socorro</li>
-            <li>Santa Lucía</li>
-            <li>Calle 40 Sur</li>
-            <li>Quiroga</li>
-            <li>Olaya</li>
-            <li>Restrepo</li>
-            <li>Fucha</li>
-            <li>Nariño</li>
-            <li>Hortúa</li>
-            <li>Hospital</li>
-
-          </ul>
+          <div id="Socorro"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Socorro')" id="boton">
         </div>
 
         <div class="highslide-footer">
           <div><span class="highslide-resize" title="Resize"></span></div>
         </div>
-      </div>
-
-      <button onclick="return hs.htmlExpand(this, { contentId: 'troncalTunal' } )" style="background-color: #ff8601"> H| Caracas Tunal </button>
-
-      <div class="highslide-html-content" id="troncalTunal">
-
-        <div class="highslide-header">
-          <ul>
-            <li class="highslide-move"><a href="#" onclick="return false">Mover</a></li>
-            <li class="highslide-close"><a href="#" onclick="return hs.close(this)">Cerrar</a></li>
-          </ul>
-        </div>
-
-        <div class="highslide-body">
-          <h2>H| Caracas sur Tunal</h2>
-          <img width="370" src="imagenes/troncales/CaracasTunalSur.jpg" alt="gráfica alusiva troncal Tunal " />
-          <ul>
-            <li>Portal del Tunal</li>
-            <li>Parque</li>
-            <li>Biblioteca</li>
-          </ul>
-        </div>
-
-        <div class="highslide-footer">
-          <div><span class="highslide-resize" title="Resize"></span></div>
-        </div>
-
       </div>
 
       <button onclick="return hs.htmlExpand(this, { contentId: 'troncalEje' } )" style="background-color: #f5a3af"> J| Eje Ambiental </button>
@@ -402,11 +258,8 @@
         <div class="highslide-body">
           <h2>J| Eje Ambiental</h2>
           <img width="370" src="imagenes/troncales/EjeAmbiental.jpg" alt="gráfica alusiva troncal eje Ambiental " />
-          <ul>
-            <li>Museo del Oro</li>
-            <li>Las Aguas</li>
-            <li>Universidades</li>
-          </ul>
+          <div id="Aguas"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Aguas')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -428,22 +281,9 @@
 
         <div class="highslide-body">
           <h2>K| Calle 26</h2>
-          <img width="370" src="imagenes/troncales/troncales/Calle26.jpg" alt="gráfica alusiva troncal Calle 26 " />
-          <ul>
-            <li>Portal Eldorado</li>
-            <li>Modelia</li>
-            <li>Normandía</li>
-            <li>Avenida Rojas</li>
-            <li>El Tiempo - Maloka</li>
-            <li>Salitre - El Greco</li>
-            <li>CAN</li>
-            <li>Gobernación</li>
-            <li>Quinta Paredes</li>
-            <li>Corferias</li>
-            <li>Ciudad Universitaria</li>
-            <li>Concejo de Bogotá</li>
-            <li>Centro Memoria</li>
-          </ul>
+          <img width="370" src="imagenes/troncales/Calle26.jpg" alt="gráfica alusiva troncal Calle 26 " />
+          <div id="Modelia"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Modelia')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -466,18 +306,8 @@
         <div class="highslide-body">
           <h2>L| Carrera10</h2>
           <img width="370" src="imagenes/troncales/CarreraDecima.jpg" alt="gráfica alusiva troncal Carrera 10 " />
-          <ul>
-            <li>Portal 20 de Julio</li>
-            <li>Country Sur</li>
-            <li>Avenida Primero de Mayo</li>
-            <li>Ciudad Jardín - Universidad Antonio Nariño</li>
-            <li>Policarpa</li>
-            <li>San Bernardo</li>
-            <li>Bicentenario</li>
-            <li>San Victorino</li>
-            <li>Las Nieves</li>
-            <li>San Diego</li>
-          </ul>
+          <div id="Policarpa"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Policarpa')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -500,9 +330,8 @@
         <div class="highslide-body">
           <h2>M| Carrera Septima</h2>
           <img width="370" src="imagenes/troncales/CarreraSeptima.jpg" alt="gráfica alusiva troncal Carrera Septima " />
-          <ul>
-            <li>Museo Nacional</li>
-          </ul>
+          <div id="Museo Nacional"></div>
+            <input type="button" value="Ver Estaciones" onclick="Ver('Museo Nacional')" id="boton">
         </div>
 
         <div class="highslide-footer">
@@ -706,3 +535,51 @@
     </footer>
 </body>
 </html>
+
+<script>
+    
+    var db = new loki('trasmilenio.db');
+    var estaciones = db.addCollection('estaciones');
+
+    $.ajax({
+      method: "POST",
+      data: '{"resource_id":"d0775af7-1706-4404-8bea-387194287d73","q":"","filters":{},"limit":1000,"offset":0}',
+      url: "http://datosabiertos.bogota.gov.co/api/3/action/datastore_search",
+
+    })
+      .done(function (data) {
+
+        data.result.records.forEach(item => {
+          estaciones.insert({
+            Estacion: item.Name,
+            Troncal: item.Corredor,
+            Codigo: item.Id,
+            LatLon: { Lat: item.Latitud, Lon: item.Longitud },
+            Rutas:[]
+          });
+            localStorage.setItem(item.Name, item.Corredor);
+        });
+        
+      });
+
+
+
+    function Ver(darta) {
+      //estaciones.find().forEach(item => {
+        document.getElementById(darta).innerHTML = '';
+        const app = document.getElementById(darta);
+        const container = document.createElement('div');
+        container.setAttribute('class', 'container');
+        app.appendChild(container);
+        container.innerHTML = '';
+       estaciones.find({'Troncal': localStorage.getItem(darta)}).forEach(item => {
+        const card = document.createElement('ul');
+        card.setAttribute('class', 'card');
+        const li = document.createElement('li');
+        li.textContent = item.Estacion;
+        container.appendChild(card);
+        card.appendChild(li);
+      });
+    }
+    
+    </script>
