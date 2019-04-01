@@ -1,5 +1,17 @@
-var db = new loki('trasmilenio.db');
+var db = new loki('trasmilenio.db', {
+  autoload: true,
+  autoloadCallback : databaseInitialize,
+  autosave: true, 
+  autosaveInterval: 4000
+});
     var estaciones = db.addCollection('estaciones');
+
+    
+    function databaseInitialize() {
+      if (!db.getCollection('estaciones')) {
+        db.addCollection('estaciones');
+      }
+    }
 
     $.ajax({
       method: "POST",
@@ -17,7 +29,6 @@ var db = new loki('trasmilenio.db');
             LatLon: { Lat: item.Latitud, Lon: item.Longitud },
             Rutas:[]
           });
-            localStorage.setItem(item.Name, item.Corredor);
         });
         
       });
@@ -25,14 +36,13 @@ var db = new loki('trasmilenio.db');
 
 
     function Ver(darta) {
-      //estaciones.find().forEach(item => {
         document.getElementById(darta).innerHTML = '';
         const app = document.getElementById(darta);
         const container = document.createElement('div');
         container.setAttribute('class', 'container');
         app.appendChild(container);
         container.innerHTML = '';
-       estaciones.find({'Troncal': localStorage.getItem(darta)}).forEach(item => {
+       estaciones.find({'Troncal': darta}).forEach(item => {
         const card = document.createElement('ul');
         card.setAttribute('class', 'card');
         const li = document.createElement('li');
@@ -40,4 +50,22 @@ var db = new loki('trasmilenio.db');
         container.appendChild(card);
         card.appendChild(li);
       });
+      
+    }
+    function VerMuseo(darta) {
+        document.getElementById(darta).innerHTML = '';
+        const app = document.getElementById(darta);
+        const container = document.createElement('div');
+        container.setAttribute('class', 'container');
+        app.appendChild(container);
+        container.innerHTML = '';
+       estaciones.find({'Estacion': darta}).forEach(item => {
+        const card = document.createElement('ul');
+        card.setAttribute('class', 'card');
+        const li = document.createElement('li');
+        li.textContent = item.Estacion;
+        container.appendChild(card);
+        card.appendChild(li);
+      });
+      
     }
