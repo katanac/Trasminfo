@@ -6,7 +6,7 @@
    "StrRuta": " C15 PORTAL SUBA",
    "Nodo": 1808,
    "Posicion": 0,
-   "Nombre": "Portal Tunal T3",
+   "Nombre": "Portal Tunal",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -16,7 +16,7 @@
    "StrRuta": " C15 PORTAL SUBA",
    "Nodo": 1805,
    "Posicion": 1293,
-   "Nombre": "Parque A - 4",
+   "Nombre": "Parque",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -26,7 +26,7 @@
    "StrRuta": " C15 PORTAL SUBA",
    "Nodo": 1774,
    "Posicion": 1874,
-   "Nombre": "Biblioteca A - 3",
+   "Nombre": "Biblioteca",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -366,7 +366,7 @@
    "StrRuta": " H15 PORTAL TUNAL",
    "Nodo": 1776,
    "Posicion": 24381,
-   "Nombre": "Calle 40 S. C - 2",
+   "Nombre": "Calle 40 S.",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -376,7 +376,7 @@
    "StrRuta": " H15 PORTAL TUNAL",
    "Nodo": 1772,
    "Posicion": 26080,
-   "Nombre": "Biblioteca A - 1",
+   "Nombre": "Biblioteca",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -386,7 +386,7 @@
    "StrRuta": " H15 PORTAL TUNAL",
    "Nodo": 1803,
    "Posicion": 26685,
-   "Nombre": "Parque A - 2",
+   "Nombre": "Parque",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -396,7 +396,7 @@
    "StrRuta": " H15 PORTAL TUNAL",
    "Nodo": 1808,
    "Posicion": 27757,
-   "Nombre": "Portal Tunal T3",
+   "Nombre": "Portal Tunal",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -406,7 +406,7 @@
    "StrRuta": " A52 Flores",
    "Nodo": 2015,
    "Posicion": 0,
-   "Nombre": "Portal Sur T6",
+   "Nombre": "Portal Sur",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -416,7 +416,7 @@
    "StrRuta": " A52 Flores",
    "Nodo": 1753,
    "Posicion": 832,
-   "Nombre": "Perdomo B - 3",
+   "Nombre": "Perdomo",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -426,7 +426,7 @@
    "StrRuta": " A52 Flores",
    "Nodo": 1769,
    "Posicion": 3314,
-   "Nombre": "Venecia B - 3",
+   "Nombre": "Venecia",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -436,7 +436,7 @@
    "StrRuta": " A52 Flores",
    "Nodo": 1733,
    "Posicion": 4752,
-   "Nombre": "G. Santander A - 4 ó 6",
+   "Nombre": "G. Santander",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -446,7 +446,7 @@
    "StrRuta": " A52 Flores",
    "Nodo": 1745,
    "Posicion": 6092,
-   "Nombre": "NQS - Calle 30 Sur B - 3",
+   "Nombre": "NQS - Calle 30 Sur",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -456,7 +456,7 @@
    "StrRuta": " A52 Flores",
    "Nodo": 1765,
    "Posicion": 7987,
-   "Nombre": "Santa Isabel B - 3",
+   "Nombre": "Santa Isabel",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -466,7 +466,7 @@
    "StrRuta": " A52 Flores",
    "Nodo": 323,
    "Posicion": 19503,
-   "Nombre": "Calle 76 A - 1",
+   "Nombre": "Calle 76",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -476,7 +476,7 @@
    "StrRuta": " A52 Flores",
    "Nodo": 1355,
    "Posicion": 19982,
-   "Nombre": "Calle 72 B - 2 ó 5",
+   "Nombre": "Calle 72",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -486,7 +486,7 @@
    "StrRuta": " A52 Flores",
    "Nodo": 1374,
    "Posicion": 20631,
-   "Nombre": "Flores A - 4 ó 6",
+   "Nombre": "Flores",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -496,7 +496,7 @@
    "StrRuta": " G52 - Portal Sur",
    "Nodo": 1374,
    "Posicion": 0,
-   "Nombre": "Flores A - 4 ó 6",
+   "Nombre": "Flores",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
@@ -506,7 +506,7 @@
    "StrRuta": " G52 - Portal Sur",
    "Nodo": 1358,
    "Posicion": 333,
-   "Nombre": "Calle 72 A - 3",
+   "Nombre": "Calle 72",
    "Tipo Servicio": "[1] TRONCAL"
  },
  {
