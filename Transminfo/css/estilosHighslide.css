@@ -37,9 +37,6 @@
     width: 100%;
     margin: 0 auto;
 }
-.busqueda input[type: text]{
-    background-color: aqua;
-}
 #buscar{
     width: 60px;
     background-color: #5bb900;
