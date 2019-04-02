@@ -40,3 +40,8 @@
 .busqueda input[type: text]{
     background-color: aqua;
 }
+#buscar{
+    width: 60px;
+    background-color: #5bb900;
+    border-radius: 0 10px 10px 0;
+}
