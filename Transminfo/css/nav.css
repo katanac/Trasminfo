@@ -21,6 +21,7 @@ header{
 
 .navegacion{
 	width: 1000px;
+	
 	margin: 30px auto;
     background: #CB0404;
     border-radius: 25px;
@@ -42,7 +43,7 @@ header{
 	display: block;
 	padding: 15px 20px;
 	color: #ffffff;
-	font-family: 'Open sans' !important;
+	font-family: 'Abel' !important;
     text-decoration: none;
     
 }
@@ -67,7 +68,7 @@ header{
 	display: block;
 	padding: 15px;
 	color: #fff;
-	font-family: 'Open sans';
+	font-family: 'Abel';
     text-decoration: none;
     border-bottom: 1px solid #FFFFFF;
     border-radius: 10px;
