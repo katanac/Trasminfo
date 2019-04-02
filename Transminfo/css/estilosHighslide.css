@@ -1,0 +1,42 @@
+.highslide-html-content{
+    width: 650px;
+    height: 520px;
+}
+.highslide-body img{
+    float: left;
+}
+.highslide-body ul{
+    width: 130px;
+    display: inline-block;
+    margin-right: 17px;
+}
+.highslide-body li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+}
+.busqueda{
+    width: 100%;
+    display: inline-block;
+}
+.busquedaEstaciones{
+    width: 50%;
+    float: left;
+}
+.busquedaEstaciones table{
+    margin: 0 auto;
+}
+.busquedaTroncales{
+    width: 50%;
+    float: left;
+}
+.busquedaTroncales table{
+    margin: 0 auto;
+}
+#busquedaIngresada{
+    width: 100%;
+    margin: 0 auto;
+}
+.busqueda input[type: text]{
+    background-color: aqua;
+}
