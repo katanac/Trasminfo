@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="Trasminfo" content="Este sitio web ayuda a terner informacion, servivios y novedades del sistema de trasmilenio">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="iso-8559-1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="Stylesheet" href="css/estilosbanner.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -13,103 +15,93 @@
     <link rel="stylesheet" href="css/estilo.css">
     <title>Transminfo</title>
 </head>
+
 <body>
     <header>
-        <img src="imagenes/logo.png" class="logo"width="120" height="120" />
-        <img src="imagenes/tagline.png" class="tagline" width="500" height="100"/>
+        <img src="imagenes/logo.png" class="logo" />
+        <span>
+          <h1>Disfruta un buen viaje</h1>
+        </span>
+        <!--<img src="imagenes/tagline.png" class="tagline" width="500" height="100"/>-->
     </header>
-    
-        <nav class="navegacion">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#interes">Sitios de interes</a></li>
-                <li><a href="#">Servicios</a>
-                    <ul class="submenu">
-                        <li><a href="mapa.html">Mapa de Troncales</a></li>
-                        <li><a href="mapadesitio.html">Mapa del sito</a></li>
-                        <li><a href="#">Servicio #3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#footer">Contacto</a></li>
-            </ul>
-            </nav>
+
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#interes">Sitios de interes</a></li>
+            <li><a href="#">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="mapa.html">Mapa de Troncales</a></li>
+                    <li><a href="mapadesitio.html">Mapa del sito</a></li>
+                    <li><a href="#">Servicio #3</a></li>
+                </ul>
+            </li>
+            <li><a href="#footer">Contacto</a></li>
+        </ul>
+    </nav>
     <br>
     <section>
         <div class="contenedor2">
-            <h2 class="encabezado"><P style="color: white">MAPA DE SITIO</P></h2>
-            <table class="tabla">
-                <td style="color: white">
-                    <h2>INIC</h2>
+            <h2 class="encabezado">
+                <P style="color: white">MAPA DE SITIO</P>
+            </h2>
+            <div class="row">
+                <div class="col-md-1">
+                    
+                </div>
+                <div class="col-md-2">
+                    <a title="INICIO" id="EncabezadpMS1">
+                        <h2>INICIO</h2>
+                    </a>
                     <ul>
-                        <li>Not</li>
-                        <li>Siti</li>
+                        <li><a href="index.html#noticias" title="presione para acceder a noticias">Noticias relevantes</a></li>
+                        <li><a href="index.html#interes" title="presione para acceder a los sitios de interés">Sitios de
+                                interés</a></li>
                     </ul>
-                </td>
-                <td>
-                    <a title="INICIO" ><h2>INICIO</h2></a>
+                </div>
+                <div class="col-md-2">
+                    <a title="INICIO" id="EncabezadpMS2">
+                        <h2>SITIOS DE INTERES</h2>
+                    </a>
                     <ul>
-                            <li><a href="index.html#noticias" title="presione para acceder a noticias">Noticias relevantes</a></li>
-                            <li><a href="index.html#interes" title="presione para acceder a los sitios de interés">Sitios de interés</a></li>
+                        <li><a href="index.html#interes" title="presione para acceder a los sitios de interés">Sitios de
+                                interés</a></li>
                     </ul>
-                </td>
-                <td style="color: white">
-                    <h2>INICIO</h2>
-                    <ul>
-                        <li>Noticias</li>
-                        <li>Sitios</li>
-                    </ul>
-                </td>
-                <td>
-                    <a title="INICIO" ><h2>Sitios de interés</h2></a>
-                    <ul>
-                        <li><a href="index.html#interes" title="presione para acceder a los sitios de interés">Sitios de interés</a></li>
-                    </ul>
-                </td>
-                <td style="color: white">
-                    <h2>INICIO</h2>
-                    <ul>
-                        <li>Noticias</li>
-                        <li>Sitios</li>
-                    </ul>
-                </td>
-                <td>
-                    <a title="INICIO" ><h2>Servicios</h2></a>
+                </div>
+                <div class="col-md-2">
+                    <a title="INICIO" id="EncabezadpMS3">
+                        <h2>SERVICIOS</h2>
+                    </a>
                     <ul>
                         <li><a href="mapa.html" title="presione para acceder a noticias">Mapa de troncales</a></li>
                         <li><a href="mapadesitio.html" title="presione para acceder a los sitios de interés">Mapa de sitio</a></li>
                         <li><a href="#" title="presione para acceder a los sitios de interés">Servicio #3</a></li>
                     </ul>
-                </td>
-                <td style="color: white">
-                    <h2>INICIO</h2>
-                    <ul>
-                        <li>Noticias</li>
-                        <li>Sitios</li>
-                    </ul>
-                </td>
-                <td>
-                    <a title="INICIO" ><h2>CONTACTO</h2></a>
+                </div>
+                <div class="col-md-2">
+                    <a title="INICIO" id="EncabezadpMS4">
+                        <h2>CONTACTO</h2>
+                    </a>
                     <ul>
                         <li><a href="index.html#footer" title="presione para acceder a la información de contacto">Contacto</a></li>
                     </ul>
-                </td>
-                <td style="color: white">
-                    <h2>INICIO</h2>
-                    <ul>
-                        <li>Noticias</li>
-                        <li>Sitios</li>
-                    </ul>
-                </td>
-                <td>
-                    <a title="INICIO" ><h2>SIGANOS</h2></a>
+                </div>
+                <div class="col-md-2">
+                    <a title="INICIO" id="EncabezadpMS5">
+                        <h2>SIGANOS</h2>
+                    </a>
                     <ul>
                         <li><a href="https://www.facebook.com/TransMilenio" target="blank_">Facebook</a></li>
                         <li><a href="https://twitter.com/TransMilenio" target="blank_">Twitter</a></li>
                         <li><a href="https://www.instagram.com/TransMilenio/" target="blank_">Instagram</a></li>
                         <li><a href="https://www.youtube.com/user/OFICIALTRANSMILENIO" target="blank_">Youtube</a></li>
                     </ul>
-                </td>
-            </table>
+                </div>
+                <div class="col-md-1">
+                    
+                </div>
+            </div>
+            
         </div>
     </section>
     <br>
@@ -117,23 +109,33 @@
     <footer id="footer">
         <div>
             <br>
-            <a href="mapadesitio.html" title="Mapa de sitio" ><h2>Mapa de sitio</h2></a>
+            <a href="mapadesitio.html" title="Mapa de sitio">
+                <h2>Mapa de sitio</h2>
+            </a>
             <ul style="list-style: none">
-                <li><h3>Información de contacto:</h3></li>
+                <li>
+                    <h3>Información de contacto:</h3>
+                </li>
                 <li><strong>PBX:</strong> 57(1)2203000 ext. 1 o 2 | <strong>Línea Fija:</strong> 4824304</li>
-                <li><strong>Dirección:</strong> Av. Eldorado No. 69 - 76 / Edificio Elemento Torre 1 Piso 5 | <strong>Código Postal</strong> 111071</li>
+                <li><strong>Dirección:</strong> Av. Eldorado No. 69 - 76 / Edificio Elemento Torre 1 Piso 5 | <strong>Código
+                        Postal</strong> 111071</li>
                 <li><strong>Horario de atención: </strong> 7:30 am - 4:30 pm de Lunes a Viernes</li>
             </ul>
             <div style="padding-left: 35%">
                 <nav>
-                    <a title="Síganos en Facebook, abre una nueva pestaña" href="https://www.facebook.com/TransMilenio" target="blank_"><img src="imagenes/Facebook.png" alt="Logo Facebook" width="50" height="50"></a>
-                    <a title="Síganos en Twitter, abre una nueva pestaña" href="https://twitter.com/TransMilenio" target="blank_"><img src="imagenes/Twitter.png" alt="Logo Twitter" width="50" height="50"></a>
-                    <a title="Síganos en Instagram, abre una nueva pestaña" href="https://www.instagram.com/TransMilenio/" target="blank_"><img src="imagenes/Instagram.png" alt="Logo Instagram" width="50" height="50"></a>
-                    <a title="Síganos en Youtube, abre una nueva pestaña" href="https://www.youtube.com/user/OFICIALTRANSMILENIO" target="blank_"><img src="imagenes/Youtube.png" alt="Logo Youtube" width="50" height="50"></a>
+                    <a title="Síganos en Facebook, abre una nueva pestaña" href="https://www.facebook.com/TransMilenio"
+                        target="blank_"><img src="imagenes/Facebook.png" alt="Logo Facebook" width="50" height="50"></a>
+                    <a title="Síganos en Twitter, abre una nueva pestaña" href="https://twitter.com/TransMilenio"
+                        target="blank_"><img src="imagenes/Twitter.png" alt="Logo Twitter" width="50" height="50"></a>
+                    <a title="Síganos en Instagram, abre una nueva pestaña" href="https://www.instagram.com/TransMilenio/"
+                        target="blank_"><img src="imagenes/Instagram.png" alt="Logo Instagram" width="50" height="50"></a>
+                    <a title="Síganos en Youtube, abre una nueva pestaña" href="https://www.youtube.com/user/OFICIALTRANSMILENIO"
+                        target="blank_"><img src="imagenes/Youtube.png" alt="Logo Youtube" width="50" height="50"></a>
                 </nav>
             </div>
         </div>
         <br>
     </footer>
 </body>
+
 </html>

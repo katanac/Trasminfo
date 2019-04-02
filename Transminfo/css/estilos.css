@@ -1,5 +1,5 @@
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel' !important;
     background-size: 100%;
 }
 
@@ -16,7 +16,6 @@ footer div a{
 
 footer ul{
     list-style: none;
-    text-decoration: none;
 }
 
 .contenedor{
@@ -30,9 +29,11 @@ footer ul{
 
 .encabezado{
     margin:0px auto;
-    background-color: rgb(17, 16, 16);
+    background-color: black;
     color: white;
     padding-left: 33%;
+    padding-right: 15%;
+    font-family: 'Abel';
 }
 
 .mapa{
@@ -41,21 +42,22 @@ footer ul{
 
 .contenedor2{
     border: 1px solid black;
-    margin: 0 3%;
     background-color: white;
+    /*margin: 20px, 20px,20px,20px ;*/
+
+}
+.contenedor2 li {
+    
+    list-style:none;  
 }
 
-.tabla{
-    padding-right: 10%;
-}
-
-.tabla a{
+.contenedor2 li a{
+    color:black ;
     text-decoration: none;
-    color: black;
 }
 
-.tabla a:hover,
-.tabla a:focus{
-    color: blue;
+.contenedor2 a:hover,
+.contenedor2 a:focus{
+    color:red;
 }
 
