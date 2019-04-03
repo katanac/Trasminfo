@@ -114,12 +114,14 @@ var db = new loki('trasmilenio.db', {
           return value.idVagon == dato_idVagon;
         });
         console.log(rutasFiltradas);
+        
         //$("#rutaspop").empty();
         var html = '';
         $.each(rutasFiltradas,function(index,value){
         html += `<div style="margin-top:10px"> <ul><li>' ${value.Name} '</li> <ul></div>`
         });
         $("#rutaspop").append(html);
+
       }
 
       //console.log(mostrarRutas('Olaya1'));
