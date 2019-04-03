@@ -158,3 +158,22 @@ var db = new loki('trasmilenio.db', {
       });
       
     }
+
+    function Buscar() {
+        var palabra = document.getElementById('troncalBuscada').value;
+        document.getElementById('busquedaIngresada').innerHTML = '';
+        const app = document.getElementById('busquedaIngresada');
+        const container = document.createElement('div');
+        container.setAttribute('class', 'container');
+        app.appendChild(container);
+        container.innerHTML = '';
+       estaciones.find({'Troncal': palabra}).forEach(item => {
+        const card = document.createElement('ul');
+        card.setAttribute('class', 'card');
+        const li = document.createElement('li');
+        li.textContent = item.Estacion;
+        container.appendChild(card);
+        card.appendChild(li);
+      });
+      
+    }
