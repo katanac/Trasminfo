@@ -159,7 +159,7 @@ var db = new loki('trasmilenio.db', {
       
     }
 
-    function Buscar() {
+    function BuscarTroncal() {
         var palabra = document.getElementById('troncalBuscada').value;
         document.getElementById('busquedaIngresada').innerHTML = '';
         const app = document.getElementById('busquedaIngresada');
@@ -168,10 +168,10 @@ var db = new loki('trasmilenio.db', {
         app.appendChild(container);
         container.innerHTML = '';
        estaciones.find({'Troncal': palabra}).forEach(item => {
-        const card = document.createElement('ul');
+           const card = document.createElement('ul');
         card.setAttribute('class', 'card');
         const li = document.createElement('li');
-        li.textContent = item.Estacion;
+        li.textContent = item.NameEstacion;
         container.appendChild(card);
         card.appendChild(li);
       });
