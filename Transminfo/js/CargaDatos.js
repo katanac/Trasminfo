@@ -188,3 +188,58 @@ var db = new loki('trasmilenio.db', {
       });
       
     }
+
+function verVagones1(dato_nombreEstacion){
+        let vagones = db.getCollection('vagones');
+
+
+        var vagonesFiltrados = $.grep(vagones.data,function(value){
+          return value.NameEstacion == dato_nombreEstacion;
+        });
+        
+        $("#busquedaIngresada").empty();
+        let countVagon = 0;
+         $.each(vagonesFiltrados,function(index,value){
+           countVagon += 1;
+             const container = document.createElement('div');
+        container.setAttribute('class', 'bloque');
+          var vagonActual = 'Vagon: '+ countVagon;
+             container.append(vagonActual);
+          $("#busquedaIngresada").append(container);
+          verRutas1(value.idVagon, container);
+        });
+        
+        return vagonesFiltrados;
+      }
+
+
+      function verRutas1(dato_nombreVagon, container){
+
+        let rutas = db.getCollection('rutas');
+
+
+        var rutasFiltradas = $.grep(rutas.data,function(value){
+          return value.idVagon == dato_nombreVagon;
+        });
+        console.log(rutasFiltradas);
+        
+        
+        //$("#rutaspop").empty();
+        $.each(rutasFiltradas,function(index,value){
+        const li = document.createElement('p');
+        li.textContent = value.Name;
+        container.append(li);
+        });
+
+      }
+
+
+
+      function VerDetallesEstacion(){
+          var NameEstacion = document.getElementById('estacionBuscada').value;
+        verVagones1(NameEstacion);
+      }
+      
+    
+        
+        

@@ -53,4 +53,14 @@
     background-color: #5bb900;
     border-radius: 0 10px 10px 0;
 }
+.bloque{
+    background-color: white;
+    width: 200px;
+    float: left;
+    text-align: center;
+    margin: 20px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    border: solid 2px;
+}
 
