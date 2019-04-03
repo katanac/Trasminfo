@@ -57,8 +57,22 @@ footer img{
 
 .navegacion{
     background:rgb(0, 0, 0);
+    height: 60px;
+    padding: none;
+}
+
+
+.navegacion li {
+
+    z-index: 1000;
+}
+
+.navegacion li a {
+
+  padding: 10px 20px;
   
 }
+
 h1{
     margin-top: 10%;
     margin-left: 5%;
