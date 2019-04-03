@@ -1,15 +1,9 @@
 .logo{
-	float: left;
-	margin: 0px auto;
-	margin-left: 30px;
-	width: 370px;
-	height: 150px;
-	padding-left: 200px;
+	display: block;
 }
 .tagline{
-    display:block;
+    display: block;
 	margin-top: 20px;
-	text-align: center;
 	padding-top: 50px;
 }
 *{
@@ -22,13 +16,14 @@
 
 header{
 	width: 100%;
-	margin-bottom: 5%;
+	align-self: auto;
 }
 
 .navegacion{
 	width: 1000px;
+	
 	margin: 30px auto;
-    background: #172340;
+    background: #CB0404;
     border-radius: 25px;
     border:1px solid rgb(0, 0, 0);
 }
@@ -48,7 +43,7 @@ header{
 	display: block;
 	padding: 15px 20px;
 	color: #ffffff;
-	font-family: 'Open sans' !important;
+	font-family: 'Abel' !important;
     text-decoration: none;
     
 }
@@ -73,7 +68,7 @@ header{
 	display: block;
 	padding: 15px;
 	color: #fff;
-	font-family: 'Open sans';
+	font-family: 'Abel';
     text-decoration: none;
     border-bottom: 1px solid #FFFFFF;
     border-radius: 10px;

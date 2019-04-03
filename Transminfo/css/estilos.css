@@ -1,17 +1,13 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("../imagenes/fondo-nubes.jpg");
+    font-family: 'Abel' !important;
     background-size: 100%;
 }
 
 footer{
-    background-color: #172340;
+    background-color: #0D4365;
     color: white;
 }
 
-footer div{
-    padding-left: 12%;
-}
 
 footer div a{
     text-decoration: none;
@@ -25,17 +21,19 @@ footer ul{
 .contenedor{
     border: 1px solid black;
     margin: 0 10%;
-    background-color: white;
     padding: 0px;
     width: 1003px;
     height: 100%;
+    margin: 0px auto;
 }
 
 .encabezado{
-    align:"center";
-    background-color: #172340;
+    margin:0px auto;
+    background-color: black;
     color: white;
     padding-left: 33%;
+    padding-right: 15%;
+    font-family: 'Abel';
 }
 
 .mapa{
@@ -44,20 +42,41 @@ footer ul{
 
 .contenedor2{
     border: 1px solid black;
-    margin: 0 3%;
     background-color: white;
+    /*margin: 20px, 20px,20px,20px ;*/
+
+}
+.contenedor2 li {
+    
+    list-style:none;  
 }
 
-.tabla{
-    padding-right: 10%;
-}
-
-.tabla a{
+.contenedor2 li a{
+    color:black ;
     text-decoration: none;
-    color: black;
 }
 
-.tabla a:hover,
-.tabla a:focus{
-    color: blue;
+.contenedor2 a:hover,
+.contenedor2 a:focus{
+    color:red;
+}
+
+
+#rutapop{
+
+    width: 100px;
+    position:absolute;
+    background:yellow;
+    font:normal 10px/10px verdana;
+    color:black;
+    border:solid 1px black;
+    top: 550px;
+    left: 125px;
+    text-align:justify;
+    padding:10px 10px 10px 10px;
+}
+
+map {position: absolute;}
+area{
+    position: absolute;
 }

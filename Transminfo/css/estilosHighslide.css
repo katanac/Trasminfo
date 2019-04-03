@@ -1,0 +1,56 @@
+.highslide-html-content{
+    width: 650px;
+    height: 520px;
+}
+.highslide-body img{
+    float: left;
+}
+.highslide-body ul{
+    width: 130px;
+    display: inline-block;
+    margin-right: 17px;
+}
+.highslide-body li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+}
+.busqueda{
+    width: 100%;
+    display: inline-block;
+}
+.busqueda ul{
+    width: 130px;
+    display: inline-block;
+    margin-right: 17px;
+}
+.busqueda li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+}
+.busquedaEstaciones{
+    width: 50%;
+    float: left;
+}
+.busquedaEstaciones table{
+    margin: 0 auto;
+}
+.busquedaTroncales{
+    width: 50%;
+    float: left;
+}
+.busquedaTroncales table{
+    margin: 0 auto;
+}
+#busquedaIngresada{
+    padding-top:  100px;
+    width: 100%;
+    margin: 0 auto;
+}
+#buscar{
+    width: 60px;
+    background-color: #5bb900;
+    border-radius: 0 10px 10px 0;
+}
+
