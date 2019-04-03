@@ -88,41 +88,52 @@ var db = new loki('trasmilenio.db', {
         {idRuta:'11_C50', Name:'C50', idVagon:'tv914'}
       ]);
 
-     
-
-      var testArray = [{id:"Olaya",troncal:"Caracas",test:"1"}];
 
       function verVagones(dato_nombreEstacion){
         let vagones = db.getCollection('vagones');
 
+
         var vagonesFiltrados = $.grep(vagones.data,function(value){
           return value.NameEstacion == dato_nombreEstacion;
         });
+        
+        $("#rutaspop").empty();
+        let countVagon = 0;
          $.each(vagonesFiltrados,function(index,value){
+           countVagon += 1;
+          var vagonActual = 'Vagon: '+ countVagon;
+          $("#rutaspop").append(vagonActual);
           verRutas(value.idVagon);
         });
         
-        //console.log(vagonesFiltrados);
+        return vagonesFiltrados;
       }
 
 
-      function verRutas(dato_idVagon){
+      function verRutas(dato_nombreVagon){
 
         let rutas = db.getCollection('rutas');
 
+
         var rutasFiltradas = $.grep(rutas.data,function(value){
-          return value.idVagon == dato_idVagon;
+          return value.idVagon == dato_nombreVagon;
         });
         console.log(rutasFiltradas);
+        
+        
         //$("#rutaspop").empty();
         var html = '';
         $.each(rutasFiltradas,function(index,value){
-        html += `<div style="margin-top:10px"> <ul><li>' ${value.Name} '</li> <ul></div>`
+        html += `<div style="margin-top:10px"> <ul><li> ${value.Name}</li> <ul></div>`
         });
         $("#rutaspop").append(html);
+
       }
 
-      //console.log(mostrarRutas('Olaya1'));
+
+      function detallesEstacion(NameEstacion){
+        verVagones(NameEstacion);
+      }
 
     function Ver(darta) {
         document.getElementById(darta).innerHTML = '';
