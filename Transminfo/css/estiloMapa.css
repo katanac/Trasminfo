@@ -1,0 +1,36 @@
+.ruta{
+    display: inline-block;
+    width: 1000px;
+    margin: 0 auto;
+}
+.estaciones-mapa{
+    float: left;
+    margin-left: 50px;
+}
+
+.troncales-botones{
+    display: inline-block;
+    float: left;
+    width: 200px;
+}
+button{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 160px;
+    height: 35px;
+}
+button:hover{
+    width: 175px;
+    height: 40px;
+}
+.encabezado {
+ margin: 0px auto;
+ padding: 0px;    
+}

@@ -1,0 +1,30 @@
+.mi-carrusel {
+    margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+    margin-top: 10%;
+}
+
+.mi-carrusel .img {
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+    background-color: black;
+    font-size: 30px;
+    margin-inline-start:100px;  
+}
+
+.carousel-control-next-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+    background-color:  black;
+    font-size: 30px;
+    margin-inline-end:100px;  }
