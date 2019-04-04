@@ -46,14 +46,14 @@ var db = new loki('trasmilenio.db', {
         {idVagon:'Olaya2', Name:'2', NameEstacion:'Olaya'},
         {idVagon:'Narino1', Name:'1', NameEstacion:'Nariño'},
         {idVagon:'Narino2', Name:'2', NameEstacion:'Nariño'},
-        {idVagon:'Campina1',Name:'1', NameEstacion:'Campina'},
-        {idVagon:'Campina2',Name:'2', NameEstacion:'Campina'},
-        {idVagon:'Campina3',Name:'3', NameEstacion:'Campina'},
-        {idVagon:'Campina4',Name:'4', NameEstacion:'Campina'},
-        {idVagon:'tv911',Name:'1', NameEstacion:'Tv 91'},
-        {idVagon:'tv912',Name:'1', NameEstacion:'Tv 91'},
-        {idVagon:'tv913',Name:'1', NameEstacion:'Tv 91'},
-        {idVagon:'tv914',Name:'1', NameEstacion:'Tv 91'}
+        {idVagon:'Campina1',Name:'1', NameEstacion:'Campiña'},
+        {idVagon:'Campina2',Name:'2', NameEstacion:'Campiña'},
+        {idVagon:'Campina3',Name:'3', NameEstacion:'Campiña'},
+        {idVagon:'Campina4',Name:'4', NameEstacion:'Campiña'},
+        {idVagon:'tv911',Name:'1', NameEstacion:'Tv91'},
+        {idVagon:'tv912',Name:'1', NameEstacion:'Tv91'},
+        {idVagon:'tv913',Name:'1', NameEstacion:'Tv91'},
+        {idVagon:'tv914',Name:'1', NameEstacion:'Tv91'}
 
       ]);
 
@@ -97,12 +97,16 @@ var db = new loki('trasmilenio.db', {
           return value.NameEstacion == dato_nombreEstacion;
         });
         
-        $("#rutaspop").empty();
+        $("#rutapop").empty();
         let countVagon = 0;
+        $("#rutapop").append('<style="font-size: 20px;>'+dato_nombreEstacion+'</style><br><br>');
          $.each(vagonesFiltrados,function(index,value){
            countVagon += 1;
+           
+        $("#rutapop").append('<br>');
           var vagonActual = 'Vagon: '+ countVagon;
-          $("#rutaspop").append(vagonActual);
+          
+          $("#rutapop").append(vagonActual);
           verRutas(value.idVagon);
         });
         
@@ -124,9 +128,9 @@ var db = new loki('trasmilenio.db', {
         //$("#rutaspop").empty();
         var html = '';
         $.each(rutasFiltradas,function(index,value){
-        html += `<div style="margin-top:10px"> <ul><li> ${value.Name}</li> <ul></div>`
+        html += `<div style="margin-top:10px"> ${value.Name}</div>`
         });
-        $("#rutaspop").append(html);
+        $("#rutapop").append(html);
 
       }
 
@@ -170,21 +174,117 @@ var db = new loki('trasmilenio.db', {
       
     }
 
-    function Buscar() {
-        var palabra = document.getElementById('troncalBuscada').value;
-        document.getElementById('busquedaIngresada').innerHTML = '';
-        const app = document.getElementById('busquedaIngresada');
-        const container = document.createElement('div');
-        container.setAttribute('class', 'container');
-        app.appendChild(container);
-        container.innerHTML = '';
-       estaciones.find({'Troncal': palabra}).forEach(item => {
-        const card = document.createElement('ul');
-        card.setAttribute('class', 'card');
-        const li = document.createElement('li');
-        li.textContent = item.Estacion;
-        container.appendChild(card);
-        card.appendChild(li);
+    var ns4 = (document.layers)? true:false
+    var ie4 = (document.all)? true:false
+    var ns6 = (document.getElementById && !document.all) ? true: false;
+    var coorX, coorY, iniX, iniY;
+    function mouseMove(e)
+    {
+	    if (ns4||ns6)	{coorX = e.pageX; coorY = e.pageY;}
+	    if (ie4)	{coorX = event.x; coorY = event.y;}
+	    return true;
+    }
+
+    if (ns6) document.addEventListener("mousemove", mouseMove, true)
+    if (ns4) {document.captureEvents(Event.MOUSEMOVE); document.mousemove = mouseMove;}
+
+    function mouseMove(e)
+    {
+	    if (ns4||ns6)	{coorX = e.pageX; coorY = e.pageY;}
+	    if (ie4)	{coorX = event.x; coorY = event.y;}
+	  return true;
+    }
+    function mover()	{
+      var x = $('#busquedaIngresada').outerHeight();
+      $("#rutapop").parent().css({position: 'relative'});
+      $("#rutapop").css({top: coorY -570 -x, left: coorX -390, position:'absolute'});
+      document.getElementById("rutapop").style.visibility = "visible";
+    }
+    function VerRut(station){
+        var x = $('#busquedaIngresada').outerHeight();
+        detallesEstacion(station.title);
+        $("#rutapop").parent().css({position: 'relative'});
+        $("#rutapop").css({top: coorY -470 - x , left: coorX -390, position:'absolute'});
+        document.getElementById('rutapop').style.visibility="visible";        
+    }
+    function ocultar()	{
+      document.getElementById("rutapop").style.visibility = "hidden";
+    }
+    
+    function BuscarTroncal() {
+      var palabra = document.getElementById('troncalBuscada').value;
+      document.getElementById('busquedaIngresada').innerHTML = '';
+      const app = document.getElementById('busquedaIngresada');
+      const container = document.createElement('div');
+      container.setAttribute('class', 'container');
+      app.appendChild(container);
+      container.innerHTML = '';
+     estaciones.find({'Troncal': palabra}).forEach(item => {
+         const card = document.createElement('ul');
+      card.setAttribute('class', 'card');
+      const li = document.createElement('li');
+      li.textContent = item.NameEstacion;
+      container.appendChild(card);
+      card.appendChild(li);
+    });
+    
+  }
+
+function verVagones1(dato_nombreEstacion){
+      let vagones = db.getCollection('vagones');
+
+
+      var vagonesFiltrados = $.grep(vagones.data,function(value){
+        return value.NameEstacion == dato_nombreEstacion;
       });
       
+      $("#busquedaIngresada").empty();
+      let countVagon = 0;
+       $.each(vagonesFiltrados,function(index,value){
+         countVagon += 1;
+           const container = document.createElement('div');
+      container.setAttribute('class', 'bloque');
+        var vagonActual = 'Vagon: '+ countVagon;
+           container.append(vagonActual);
+        $("#busquedaIngresada").append(container);
+        verRutas1(value.idVagon, container);
+      });
+      
+      return vagonesFiltrados;
     }
+
+
+    function verRutas1(dato_nombreVagon, container){
+
+      let rutas = db.getCollection('rutas');
+
+
+      var rutasFiltradas = $.grep(rutas.data,function(value){
+        return value.idVagon == dato_nombreVagon;
+      });
+      console.log(rutasFiltradas);
+      
+      
+      //$("#rutaspop").empty();
+      $.each(rutasFiltradas,function(index,value){
+      const li = document.createElement('p');
+      li.textContent = value.Name;
+      container.append(li);
+      });
+
+    }
+
+
+
+    function VerDetallesEstacion(){
+        var NameEstacion = document.getElementById('estacionBuscada').value;
+      verVagones1(NameEstacion);
+    }
+
+    function Limpiar(){
+      document.getElementById('busquedaIngresada').innerHTML = '';
+    }
+    
+  
+      
+      

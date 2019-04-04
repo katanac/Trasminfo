@@ -65,39 +65,39 @@
       <div class="encabezado">
         <center><h2 >Busqueda</h2></center>
       </div>
+
       <div class="busqueda">
         <div class="busquedaEstaciones">
-          <table> 
+            <table>
+                <tr>
+                <td colspan="3"><h3>Busqueda por Estación</h3></td>
+                </tr>
             <tr>
-              <td colspan="2">
-                <h3>Busqueda por Estación</h3>
-              </td>
+                <td><input type="text" placeholder="Buscar.." id="estacionBuscada"></td>
+                <td><input type="submit" value="Buscar" id="buscar" onclick="VerDetallesEstacion()"></td>
+                <td><input type="submit" value="Limpiar" id="buscar" onclick="Limpiar()"></td>
             </tr>
-            <tr>
-              <td><input type="text" placeholder="Buscar.."></td>
-              <td><input type="submit" value="Buscar" id="buscar"></td>
-            </tr>
-          </table>
+        </table>
         </div>
         <div class="busquedaTroncales">
-          <table>
+            <table>
+                <tr>
+                <td colspan="3"><h3>Busqueda por troncal</h3></td>
+                </tr>
             <tr>
-              <td colspan="2">
-                <h3>Busqueda por troncal</h3>
-              </td>
+                <td><input type="text" placeholder="Buscar.." id="troncalBuscada"></td>
+                <td><input type="submit" value="Buscar" id="buscar" onclick="BuscarTroncal()"></td>
+                <td><input type="submit" value="Limpiar" id="buscar" onclick="Limpiar()"></td>
             </tr>
-            <tr>
-              <td><input type="text" placeholder="Buscar.." id="troncalBuscada"></td>
-              <td><input type="submit" value="Buscar" id="buscar" onclick="Buscar()"></td>
-            </tr>
-          </table>
+        </table>
         </div>
-        <div id="busquedaIngresada"></div>
+            <div id="busquedaIngresada" style="display: inline-block"></div>
+        
+    </div>
 
-      </div>
       <div class="encabezado">
         <a name="noticias" id="noticias"></a>
-        <center><h2>Haga click Sobre na estacion para ver más detalles</h2></center>
+        <center><h2>Haga click Sobre una estación para ver más detalles</h2></center>
         
       </div>
       <div class="ruta">
@@ -406,326 +406,322 @@
           <map id="imgmap1" name="imgmap1">
             <!--Troncal A: Caracas---------------------------------------------------->
             <area shape="circle" alt="Calle 76" title="Calle 76" coords="275,146,6" href="imagenes/paradas/a1.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 72" title="Calle 72" coords="294,146,6" href="imagenes/paradas/a2.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Flores" title="Flores" coords="307,146,6" href="imagenes/paradas/a3.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 63" title="Calle 63" coords="319,146,5" href="imagenes/paradas/a4.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 57" title="Calle 57" coords="332,146,6" href="imagenes/paradas/a5.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Marly" title="Marly" coords="344,146,6" href="imagenes/paradas/a6.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 45" title="Calle 45" coords="356,146,5" href="imagenes/paradas/a7.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="AV. 39" title="AV. 39" coords="369,146,6" href="imagenes/paradas/a8.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 34" title="Calle 34" coords="382,147,5" href="imagenes/paradas/a9.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 26" title="Calle 26" coords="395,146,6" href="imagenes/paradas/a10.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 22" title="Calle 22" coords="420,146,6" href="imagenes/paradas/a11.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 19" title="Calle 19" coords="433,148,6" href="imagenes/paradas/a12.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="AV. Jimenez" title="AV. Jimenez" coords="448,147,5"
-              href="imagenes/paradas/a13.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/a13.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Tercer Milenio" title="Tercer Milenio" coords="462,147,6"
-              href="imagenes/paradas/a14.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/a14.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal B:Norte------------------------------------------------------->
             <area shape="circle" alt="Terminal" title="Terminal" coords="25,145,6" href="imagenes/paradas/b1.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 187" title="Calle 187" coords="45,146,6" href="imagenes/paradas/b2.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Portal del Norte" title="Portal del Norte" coords="64,147,8"
-              href="imagenes/paradas/b3.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/b3.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Toberin" title="Toberin" coords="79,147,5" href="imagenes/paradas/b4.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 161" title="Calle 161" coords="91,147,4" href="imagenes/paradas/b5.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Mazuren" title="Mazuren" coords="104,147,6" href="imagenes/paradas/b6.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 146" title="Calle 146" coords="117,148,4" href="imagenes/paradas/b7.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 142" title="Calle 142" coords="129,148,5" href="imagenes/paradas/b8.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Alcalá" title="Alcalá" coords="141,147,5" href="imagenes/paradas/b9.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Prado" title="Prado" coords="153,146,5" href="imagenes/paradas/b10.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 127" title="Calle 127" coords="167,147,4" href="imagenes/paradas/b11.png"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Pepe Sierra" title="Pepe Sierra" coords="179,148,5"
-              href="imagenes/paradas/b12.png" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/b12.png" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 106" title="Calle 106" coords="191,147,5" href="imagenes/paradas/b13.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 100" title="Calle 100" coords="205,147,5" href="imagenes/paradas/b14.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Virrey" title="Virrey" coords="222,147,5" href="imagenes/paradas/b15.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 85" title="Calle 85" coords="235,148,4" href="imagenes/paradas/b16.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Héroes" title="Héroes" coords="247,147,5" href="imagenes/paradas/b17.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal C:Suba------------------------------------------------------->
             <area shape="circle" alt="Portal de Suba" title="Portal de Suba" coords="101,376,9"
-              href="imagenes/paradas/c1.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/c1.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Campiña" title="Campiña" coords="101,358,5" href="imagenes/paradas/c2.jpg"
-              onclick="return hs.expand(this)" />
-            <area shape="circle" alt="Suba-TV 91" title="Suba-TV 91" coords="101,340,6" href="imagenes/paradas/c3.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
+            <area shape="circle" alt="Suba-TV 91" title="Tv91" coords="101,340,6" href="imagenes/paradas/c3.jpg"
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="21 Angeles" title="21 Angeles" coords="103,323,5" href="imagenes/paradas/c4.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Gratamira" title="Gratamira" coords="102,303,4" href="imagenes/paradas/c5.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Suba-AV. Boyacá" title="Suba-AV.Boyacá" coords="106,289,6"
-              href="imagenes/paradas/c6.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/c6.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Niza-CL 127" title="Niza-CL 127" coords="118,273,6" href="imagenes/paradas/c7.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Humedal Cordoba" title="Humedal Cordoba" coords="126,258,6"
-              href="imagenes/paradas/c8.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/c8.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Shaio" title="Shaio" coords="142,250,5" href="imagenes/paradas/c9.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Puentelargo" title="Puentelargo" coords="155,250,5"
-              href="imagenes/paradas/c10.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/c10.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Suba-CL 100" title="Suba-CL 100" coords="169,249,6"
-              href="imagenes/paradas/c11.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/c11.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Suba-CL 95" title="Suba-CL 95" coords="183,250,6" href="imagenes/paradas/c12.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Rionegro" title="Rionegro" coords="197,251,5" href="imagenes/paradas/c13.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="San Martin" title="San Martin" coords="211,249,6" href="imagenes/paradas/c14.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal D:CL 80------------------------------------------------------->
             <area shape="circle" alt="Portal de la 80" title="Portal de la 80" coords="172,453,9"
-              href="imagenes/paradas/d1.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/d1.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Quirigua" title="Quirigua" coords="171,432,5" href="imagenes/paradas/d2.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Carrera 90" title="Carrera 90" coords="171,415,5" href="imagenes/paradas/d3.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Avenida Cali" title="Avenida Cali" coords="171,395,5"
-              href="imagenes/paradas/d4.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/d4.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Granja-Carrera 77" title="Granja-Carrera 77" coords="171,374,5"
-              href="imagenes/paradas/d5.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/d5.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Minuto de Dios" title="Minuto de Dios" coords="171,358,4"
-              href="imagenes/paradas/d6.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/d6.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Boyacá" title="Boyacá" coords="181,333,6" href="imagenes/paradas/d7.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Ferias" title="Ferias" coords="190,319,6" href="imagenes/paradas/d8.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Avenida 68" title="Avenida 68" coords="201,304,6" href="imagenes/paradas/d9.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Carrera 53" title="Carrera 53" coords="211,291,5" href="imagenes/paradas/d10.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Carrera 47" title="Carrera 47" coords="221,276,4" href="imagenes/paradas/d11.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Esc. Militar" title="Esc. Militar" coords="235,256,6"
-              href="imagenes/paradas/d12.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/d12.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Polo" title="Polo" coords="265,200,6" href="imagenes/paradas/d13.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal E:NQS Central------------------------------------------------------->
             <area shape="circle" alt="Castellana" title="Castellana" coords="216,200,5" href="imagenes/paradas/e1.png"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="NQS-Calle 75" title="NQS-Calle 75" coords="277,250,6"
-              href="imagenes/paradas/e2.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/e2.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="AV. Chile" title="AV. Chile" coords="296,250,6" href="imagenes/paradas/e3.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Simon Bolviar" title="Simon Bolviar" coords="313,249,6"
-              href="imagenes/paradas/e4.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/e4.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Movistar Arena" title="Movistar Arena" coords="331,249,6"
-              href="imagenes/paradas/e5.png" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/e5.png" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Campin-U. Antonio Nariño" title="Campin-U. Antonio Nariño" coords="348,249,6"
-              href="imagenes/paradas/e6.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/e6.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="U. Nacional" title="U. Nacional" coords="364,250,6" href="imagenes/paradas/e7.png"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="AV. El Dorado" title="AV. El Dorado" coords="384,250,6"
-              href="imagenes/paradas/e8.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/e8.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="CAD" title="CAD" coords="418,249,7" href="images/paradanes/e9.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Paloquemao" title="Paloquemao" coords="435,250,5" href="imagenes/paradas/e10.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Ricaurte" title="Ricaurte" coords="453,250,6" href="imagenes/paradas/e11.png"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Guatoque Veraguas" title="Guatoque Veraguas" coords="475,215,6"
-              href="imagenes/paradas/e12.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/e12.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Tygua-San Jose" title="Tygua-San Jose" coords="474,182,6"
-              href="imagenes/paradas/e13.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/e13.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal F:Américas------------------------------------------------------->
             <area shape="circle" alt="Portal Americas" title="Portal Americas" coords="537,480,9"
-              href="imagenes/paradas/f1.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f1.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Patio Bonito" title="Patio Bonito" coords="519,479,5"
-              href="imagenes/paradas/f2.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f2.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Biblioteca Tintal" title="Biblioteca Tintal" coords="503,477,5"
-              href="imagenes/paradas/f3.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f3.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Transversal 86" title="Transversal 86" coords="502,457,6"
-              href="imagenes/paradas/f4.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f4.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Banderas" title="Banderas" coords="502,436,6" href="imagenes/paradas/f5.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Mandalay" title="Mandalay" coords="496,415,6" href="imagenes/paradas/f6.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Mundo Aventura" title="Mundo Aventura" coords="484,399,5"
-              href="imagenes/paradas/f7.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f7.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Marsella" title="Marsella" coords="475,384,6" href="imagenes/paradas/f8.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Pradera" title="Pradera" coords="463,367,5" href="imagenes/paradas/f9.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Americas-KR 53A" title="Americas-KR 53A" coords="451,353,5"
-              href="imagenes/paradas/f10.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f10.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Puente Aranda" title="Puente Aranda" coords="447,333,6"
-              href="imagenes/paradas/f11.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f11.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Carrera 43" title="Carrera 43" coords="446,314,6" href="imagenes/paradas/f12.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Zona Industrial" title="Zona Industrial" coords="445,298,5"
-              href="imagenes/paradas/f13.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f13.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="CDS Carrera 32" title="CDS Carrera 32" coords="445,280,6"
-              href="imagenes/paradas/f14.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f14.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Ricaurte" title="Ricaurte" coords="445,239,6" href="imagenes/paradas/f15.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="San Facon" title="San Facon" coords="445,212,6" href="imagenes/paradas/f16.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="De La Sabana" title="De La Sabana" coords="446,185,6"
-              href="imagenes/paradas/f17.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f17.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="AV. Jimenez" title="AV. Jimenez" coords="445,137,5"
-              href="imagenes/paradas/f18.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/f18.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal G:NQS Sur------------------------------------------------------->
             <area shape="circle" alt="San Mateo" title="San Mateo" coords="614,517,5" href="imagenes/paradas/g1.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Terreros-Hospital C.V." title="Terreros-Hospital C.V." coords="603,499,5"
-              href="imagenes/paradas/g2.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/g2.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Leon XIII" title="Leon XIII" coords="592,484,6" href="imagenes/paradas/g3.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="La Despensa" title="La Despensa" coords="579,464,6" href="imagenes/paradas/g4.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Bosa" title="Bosa" coords="564,444,7" href="imagenes/paradas/g5.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Portal Sur" title="Portal Sur" coords="550,409,9" href="imagenes/paradas/g6.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Perdomo" title="Perdomo" coords="550,388,5" href="imagenes/paradas/g7.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Madelena" title="Madelena" coords="550,366,6" href="imagenes/paradas/g8.png"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Servillana" title="Servillana" coords="552,347,5" href="imagenes/paradas/g9.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Venecia" title="Venecia" coords="552,325,5" href="imagenes/paradas/g10.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Alqueria" title="Alqueria" coords="549,313,5" href="imagenes/paradas/g11.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="General Santander" title="General Santander" coords="542,302,5"
-              href="imagenes/paradas/g12.png" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/g12.png" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="NQS-CL 38 AS" title="NQS-CL 38 AS" coords="534,288,5"
-              href="imagenes/paradas/g13.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/g13.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="NQS-CL 30 S" title="NQS-CL 30 S" coords="523,272,5"
-              href="imagenes/paradas/g14.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/g14.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="SENA" title="SENA" coords="511,257,5" href="imagenes/paradas/g15.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Santa Isabel" title="Santa Isabel" coords="497,250,6"
-              href="imagenes/paradas/g16.png" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/g16.png" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Comuneros" title="Comuneros" coords="483,250,5" href="imagenes/paradas/g17.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal H:Caracas Sur------------------------------------------------------->
             <area shape="circle" alt="Hospital" title="Hospital" coords="487,147,6" href="imagenes/paradas/h1.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Hortua" title="Hortua" coords="500,146,5" href="imagenes/paradas/h2.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Nariño" title="Nariño" coords="515,146,6" href="imagenes/paradas/h3.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Fucha" title="Fucha" coords="531,150,6" href="imagenes/paradas/h4.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Restrepo" title="Restrepo" coords="542,166,4" href="imagenes/paradas/h5.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Olaya" title="Olaya" coords="553,182,5" href="imagenes/paradas/h6.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Quiroga" title="Quiroga" coords="564,198,5" href="imagenes/paradas/h7.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Calle 40 S" title="Calle 40 S" coords="575,213,4" href="imagenes/paradas/h8.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Santa Lucia" title="Santa Lucia" coords="588,230,6" href="imagenes/paradas/h9.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Socorro" title="Socorro" coords="608,240,6" href="imagenes/paradas/h10.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Consuelo" title="Consuelo" coords="623,239,6" href="imagenes/paradas/h11.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Molinos" title="Molinos" coords="638,239,5" href="imagenes/paradas/h12.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Portal Usme" title="Portal Usme" coords="657,240,9"
-              href="imagenes/paradas/h13.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/h13.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Biblioteca" title="Biblioteca" coords="609,262,7" href="imagenes/paradas/h14.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Parque" title="Parque" coords="621,277,6" href="imagenes/paradas/h15.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Portal Tunal" title="Portal Tunal" coords="624,316,9"
-              href="imagenes/paradas/h16.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/h16.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal J:Eje Ambiental------------------------------------------------------->
             <area shape="circle" alt="Las Aguas" title="Las Aguas" coords="417,17,5" href="imagenes/paradas/j1.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Museo del Oro" title="Museo del Oro" coords="435,46,4"
-              href="imagenes/paradas/j2.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/j2.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal K:CL 26------------------------------------------------------->
             <area shape="circle" alt="Portal el Dorado" title="Portal el Dorado" coords="349,520,9"
-              href="imagenes/paradas/k1.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/k1.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Modelia" title="Modelia" coords="348,493,6" href="imagenes/paradas/k2.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Normandia" title="Normandia" coords="348,470,5" href="imagenes/paradas/k3.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="AV. Rojas" title="AV. Rojas" coords="348,448,6" href="imagenes/paradas/k4.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="El Tiempo-Maloka" title="El Tiempo-Maloka" coords="348,425,5"
-              href="imagenes/paradas/k5.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/k5.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Salitre-El Greco" title="Salitre-El Greco" coords="349,402,6"
-              href="imagenes/paradas/k6.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/k6.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="CAN" title="CAN" coords="350,377,5" href="imagenes/paradas/k7.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Gobernacion" title="Gobernacion" coords="352,348,6" href="imagenes/paradas/k8.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Quinta Paredes" title="Quinta Paredes" coords="359,334,6"
-              href="imagenes/paradas/k9.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/k9.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Corferias" title="Corferias" coords="372,313,6" href="imagenes/paradas/k10.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Ciudad Universitaria" title="Ciudad Universitaria" coords="384,290,6"
-              href="imagenes/paradas/k11.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/k11.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Concejo Bogota" title="Concejo Bogota" coords="408,216,6"
-              href="imagenes/paradas/k12.png" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/k12.png" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Centro Memoria" title="Centro Memoria" coords="407,186,4"
-              href="imagenes/paradas/k13.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/k13.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Universidades" title="Universidades" coords="405,17,5"
-              href="imagenes/paradas/k14.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/k14.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal L:KR 10------------------------------------------------------->
             <area shape="circle" alt="Portal 20 de Julio" title="Portal 20 de Julio" coords="577,78,9"
-              href="imagenes/paradas/l1.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/l1.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Country Sur" title="Country Sur" coords="558,79,6" href="imagenes/paradas/l2.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="AV. 1 Mayo" title="AV. 1 Mayo" coords="543,79,6" href="imagenes/paradas/l3.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Ciudad Jardin-UAN" title="Ciudad Jardin-UAN" coords="526,79,6"
-              href="imagenes/paradas/l4.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/l4.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Policarpa" title="Policarpa" coords="511,80,5" href="imagenes/paradas/l5.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="San Bernardo" title="San Bernardo" coords="493,79,5"
-              href="imagenes/paradas/l6.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/l6.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Bicentenario" title="Bicentenario" coords="472,79,5"
-              href="imagenes/paradas/l7.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/l7.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="San Victorino" title="San Victorino" coords="452,77,6"
-              href="imagenes/paradas/l8.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/l8.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="Las Nieves" title="Las Nieves" coords="432,78,5" href="imagenes/paradas/l9.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <area shape="circle" alt="San Diego" title="San Diego" coords="413,78,6" href="imagenes/paradas/l10.jpg"
-              onclick="return hs.expand(this)" />
+              onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
             <!--Troncal M:KR 7------------------------------------------------------->
             <area shape="circle" alt="Museo Nacional" title="Museo Nacional" coords="391,78,7"
-              href="imagenes/paradas/m1.jpg" onclick="return hs.expand(this)" />
+              href="imagenes/paradas/m1.jpg" onclick="return hs.expand(this)" onmouseover="VerRut(this)" onmouseout="ocultar()" onmousemove="mover()" />
 
           </map>
+          <div id="rutapop"></div>
         </div>
       </div>
     </div>
-    <aside>
-      <div id="rutaspop" style="background-color:white"></div>
-    </aside>
   </section>
-  <input type="button" onclick="verVagones('Olaya')" value="Probar Olaya">
-  <input type="button" onclick="verVagones('Campina')" value="Probar Campiña">
-  <input type="button" onclick="detallesEstacion('Campina')" value="Probar Campiña">
+  
   <footer id="footer">
 
     <div style="text-align:center">

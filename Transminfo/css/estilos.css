@@ -61,3 +61,24 @@ footer ul{
     color:red;
 }
 
+
+#rutapop{
+    visibility: hidden;
+    width: 100px;
+    position:absolute;
+    background:yellow;
+    font:normal 10px/10px verdana;
+    color:black;
+    border:solid 1px black;
+    top: 550px;
+    left: 125px;
+    text-align:justify;
+    padding:10px 10px 10px 10px;
+    opacity: 0.85;
+    font-size: 13px;
+}
+
+map {position: absolute;}
+area{
+    position: absolute;
+}
